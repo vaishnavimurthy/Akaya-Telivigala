@@ -1,253 +1,284 @@
+### ======================== Classes ======================== ###
+
 @CONSONANTS = [
-  tlKA
-  tlKHA
-  tlGA
-  tlGHA
-  tlNGA
-  tlCA
-  tlCHA
-  tlJA
-  tlJHA
-  tlNYA
-  tlTTA
-  tlTTHA
-  tlDDA
-  tlDDHA
-  tlNNA
-  tlTA
-  tlTHA
-  tlDA
-  tlDHA
-  tlNA
-  tlPA
-  tlPHA
-  tlBA
-  tlBHA
-  tlMA
-  tlYA
-  tlRA
-  tlLA
-  tlVA
-  tlSHA
-  tlSSA
-  tlSA
-  tlHA
-  tlRRA
-  tlLLA
-  tlLLLA
+ tlKA
+ tlKHA
+ tlGA
+ tlGHA
+ tlNGA
+ tlCA
+ tlCHA
+ tlJA
+ tlJHA
+ tlNYA
+ tlTTA
+ tlTTHA
+ tlDDA
+ tlDDHA
+ tlNNA
+ tlTA
+ tlTHA
+ tlDA
+ tlDHA
+ tlNA
+ tlPA
+ tlPHA
+ tlBA
+ tlBHA
+ tlMA
+ tlYA
+ tlRA
+ tlLA
+ tlVA
+ tlSHA
+ tlSSA
+ tlSA
+ tlHA
+ tlRRA
+ tlLLA
+ tlLLLA
 ];
 
 @COMBINING_MATRAS = [
-  tlmAA
-  tlmI
-  tlmII
-  tlmU
-  tlmUU
-  tlmE
-  tlmEE
-  tlmO
-  tlmOO
-  tlmAU
+ tlmAA
+ tlmI
+ tlmII
+ tlmU
+ tlmUU
+ tlmE
+ tlmEE
+ tlmO
+ tlmOO
+ tlmAU
 ];
 
 @MATRAS_ALL = [
-  tlmAA
-  tlmI
-  tlmII
-  tlmU
-  tlmUU
-  tlmvR
-  tlmvRR
-  tlmE
-  tlmEE
-  tlmAI
-  tlmO
-  tlmOO
-  tlmAU
-];
-
-@BELOW_BASE_MATRAS = [
-  tlAIlengthmark.01 tlAIlengthmark tlAIlengthmark.03 tlAIlengthmark.following
+ tlmAA
+ tlmI
+ tlmII
+ tlmU
+ tlmUU
+ tlmvR
+ tlmvRR
+ tlmE
+ tlmEE
+ tlmAI
+ tlmO
+ tlmOO
+ tlmAU
 ];
 
 @POST_BASE_MATRAS = [
-  tlmvR
-  tlmvRR
+ tlmvR
+ tlmvRR
 ];
 
 @POST_BASE_MATRAS_FOLLOWING = [
-  tlmvR.following
-  tlmvRR.following
+ tlmvR.following
+ tlmvRR.following
+];
+
+@AIlengthmark = [
+tlAIlengthmark.01
+tlAIlengthmark
+tlAIlengthmark.03
+tlAIlengthmark.following
 ];
 
 @C2 = [
-  tlKAc2
-  tlKHAc2
-  tlGAc2
-  tlGHAc2
-  tlNGAc2
-  tlCAc2
-  tlCHAc2
-  tlJAc2
-  tlJHAc2
-  tlNYAc2
-  tlTTAc2
-  tlTTHAc2
-  tlDDAc2
-  tlDDHAc2
-  tlNNAc2
-  tlTAc2
-  tlTHAc2
-  tlDAc2
-  tlDHAc2
-  tlNAc2
-  tlPAc2
-  tlPHAc2
-  tlBAc2
-  tlBHAc2
-  tlMAc2
-  tlYAc2
-  tlRAc2
-  tlLAc2
-  tlVAc2
-  tlSHAc2
-  tlSSAc2
-  tlSAc2
-  tlHAc2
-  tlLLAc2
-  tlKSSAc2
+ tlKAc2
+ tlKHAc2
+ tlGAc2
+ tlGHAc2
+ tlNGAc2
+ tlCAc2
+ tlCHAc2
+ tlJAc2
+ tlJHAc2
+ tlNYAc2
+ tlTTAc2
+ tlTTHAc2
+ tlDDAc2
+ tlDDHAc2
+ tlNNAc2
+ tlTAc2
+ tlTHAc2
+ tlDAc2
+ tlDHAc2
+ tlNAc2
+ tlPAc2
+ tlPHAc2
+ tlBAc2
+ tlBHAc2
+ tlMAc2
+ tlYAc2
+ tlRAc2
+ tlLAc2
+ tlVAc2
+ tlSHAc2
+ tlSSAc2
+ tlSAc2
+ tlHAc2
+ tlLLAc2
+ tlKSSAc2
 ];
 
-@C2.FOLLOWING = [
-  tlKAc2.following
-  tlKHAc2.following
-  tlGAc2.following
-  tlGHAc2.following
-  tlNGAc2.following
-  tlCAc2.following
-  tlCHAc2.following
-  tlJAc2.following
-  tlJHAc2.following
-  tlNYAc2.following
-  tlTTAc2.following
-  tlTTHAc2.following
-  tlDDAc2.following
-  tlDDHAc2.following
-  tlNNAc2.following
-  tlTAc2.following
-  tlTHAc2.following
-  tlDAc2.following
-  tlDHAc2.following
-  tlNAc2.following
-  tlPAc2.following
-  tlPHAc2.following
-  tlBAc2.following
-  tlBHAc2.following
-  tlMAc2.following
-  tlYAc2.following
-  tlRAc2.following
-  tlLAc2.following
-  tlVAc2.following
-  tlSHAc2.following
-  tlSSAc2.following
-  tlSAc2.following
-  tlHAc2.following
-  tlLLAc2.following
-  tlKSSAc2.following
+@C2_FOLLOWING = [
+ tlKAc2.following
+ tlKHAc2.following
+ tlGAc2.following
+ tlGHAc2.following
+ tlNGAc2.following
+ tlCAc2.following
+ tlCHAc2.following
+ tlJAc2.following
+ tlJHAc2.following
+ tlNYAc2.following
+ tlTTAc2.following
+ tlTTHAc2.following
+ tlDDAc2.following
+ tlDDHAc2.following
+ tlNNAc2.following
+ tlTAc2.following
+ tlTHAc2.following
+ tlDAc2.following
+ tlDHAc2.following
+ tlNAc2.following
+ tlPAc2.following
+ tlPHAc2.following
+ tlBAc2.following
+ tlBHAc2.following
+ tlMAc2.following
+ tlYAc2.following
+ tlRAc2.following
+ tlLAc2.following
+ tlVAc2.following
+ tlSHAc2.following
+ tlSSAc2.following
+ tlSAc2.following
+ tlHAc2.following
+ tlLLAc2.following
+ tlKSSAc2.following
+];
+
+@C2_BELOW = [
+# (tlRAc2, tlTAc2 not included - use ligature forms for AIlengthmark)
+ tlKHAc2
+ tlGAc2
+ tlGHAc2
+ tlNGAc2
+ tlJAc2
+ tlJHAc2
+ tlNYAc2
+ tlTTAc2
+ tlTTHAc2
+ tlDDAc2
+ tlDDHAc2
+ tlNNAc2
+ tlTHAc2
+ tlDAc2
+ tlDHAc2
+ tlLAc2
+ tlSSAc2
+ tlHAc2
+ tlKSSAc2
+ tlTRAc2
 ];
 
 @C2_POST = [
-  tlKAc2
-  tlCAc2
-  tlCHAc2
-  tlNAc2
-  tlPAc2
-  tlPHAc2
-  tlBAc2
-  tlBHAc2
-  tlMAc2
-  tlYAc2
-  tlVAc2
-  tlSHAc2
-  tlSAc2
-  tlLLAc2
+ tlKAc2
+ tlCAc2
+ tlCHAc2
+ tlNAc2
+ tlPAc2
+ tlPHAc2
+ tlBAc2
+ tlBHAc2
+ tlMAc2
+ tlYAc2
+ tlVAc2
+ tlSHAc2
+ tlSAc2
+ tlLLAc2
 ];
 
 @C2_POST_following = [
-  tlKAc2.following
-  tlCAc2.following
-  tlCHAc2.following
-  tlNAc2.following
-  tlPAc2.following
-  tlPHAc2.following
-  tlBAc2.following
-  tlBHAc2.following
-  tlMAc2.following
-  tlYAc2.following
-  tlVAc2.following
-  tlSHAc2.following
-  tlSAc2.following
-  tlLLAc2.following
+ tlKAc2.following
+ tlCAc2.following
+ tlCHAc2.following
+ tlNAc2.following
+ tlPAc2.following
+ tlPHAc2.following
+ tlBAc2.following
+ tlBHAc2.following
+ tlMAc2.following
+ tlYAc2.following
+ tlVAc2.following
+ tlSHAc2.following
+ tlSAc2.following
+ tlLLAc2.following
 ];
 
 @C2_LIGATURE = [
-  tlTTRAc2
-  tlTYAc2
-  tlTRAc2  
-  tlKSSAc2
-  tlSSMAc2
-  tlSSMAc2.01
-  tlTTLAc2
-  tlSSNNAc2
-  tlNGGAc2
-  tlSSTTHAc2
-  tlJNYAc2
+ tlTTRAc2
+ tlTYAc2
+ tlTRAc2  
+ tlKSSAc2
+ tlSSMAc2
+ tlSSMAc2.01
+ tlTTLAc2
+ tlSSNNAc2
+ tlNGGAc2
+ tlSSTTHAc2
+ tlJNYAc2
 ];
 
 @C2_AI_LIGATURE_AI_RA = [
-  tlRAIlengthmarkc2.01
-  tlRAIlengthmarkc2.02
-  tlRAIlengthmarkc2.03
+ tlRAIlengthmarkc2.01
+ tlRAIlengthmarkc2.02
+ tlRAIlengthmarkc2.03
 ];
 
-@C2_LIGATURE_AI_TA = [
-  tlTAIlengthmarkc2.01
-  tlTAIlengthmarkc2.02
-  tlTAIlengthmarkc2.03
+@C2_LIGATURE_AI_TA = [ 
+tlTAIlengthmarkc2.01 
+tlTAIlengthmarkc2.02 
+tlTAIlengthmarkc2.03 
 ];
 
-@C2_ALTS = [
-  tlSSAc2.kssa
+@C2_ALTS = [ 
+tlSSAc2.kssa 
 ];
 
-@C2_ALTS_RA = [
-  tlRAc2.01 tlRAc2.03
+@C2_ALTS_RA = [ 
+tlRAc2.01 
+tlRAc2.03 
 ];
 
-@C2_RA = [
-  tlRAc2 @C2_ALTS_RA
+@C2_RA = [ 
+tlRAc2 
+@C2_ALTS_RA 
 ];
 
-@C2_ALTS_TA = [
-  tlTAc2.01 tlTAc2.03
+@C2_ALTS_TA = [ 
+tlTAc2.01 
+tlTAc2.03 
 ];
 
-@C2_TA = [
-  tlTAc2 @C2_ALTS_TA
+@C2_TA = [ 
+tlTAc2 
+@C2_ALTS_TA 
 ];
 
-@COMBINING_MARKS = [
-  @BELOW_BASE_MATRAS
-  @POST_BASE_MATRAS
-  @POST_BASE_MATRAS_FOLLOWING
-  @C2
-  @C2.FOLLOWING
-  @C2_LIGATURE
-  @C2_AI_LIGATURE_AI_RA
-  @C2_LIGATURE_AI_TA
-  @C2_ALTS
-  @C2_RA
-  @C2_TA
+@COMBINING_MARKS = [ 
+tlAIlengthmark 
+@POST_BASE_MATRAS 
+@POST_BASE_MATRAS_FOLLOWING 
+@C2 
+@C2_FOLLOWING 
+@C2_LIGATURE 
+@C2_AI_LIGATURE_AI_RA 
+@C2_LIGATURE_AI_TA 
+@C2_ALTS 
 ];
 
 @NARROW_LETTERS = [
@@ -294,42 +325,169 @@
  tlLLLA tlLLL tlRRA tlRR
 ];
 
-@KA = [tlKA tlKAA tlKAI tlKAU tlKE tlKEE tlKI tlKII tlKO tlKOO tlKU tlKU.alt tlKUU tlKUU.alt];
-
 ### ======================== Language Systems ======================== ###
 
 languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn CAT ;
+languagesystem latn MOL ;
+languagesystem latn ROM ;
 languagesystem telu dflt;
 languagesystem tel2 dflt;
 
 ### ======================== Lookups ======================== ###
 
-#---- AKHN ----
+#<<<<<<<<<<<< L A T I N >>>>>>>>>>>>>>
 
-lookup akhn_ssa_alt {
-  sub tlKA tlSSAc2' by tlSSAc2.kssa;
-  sub tlKAA tlSSAc2' by tlSSAc2.kssa;
-  sub tlKI tlSSAc2' by tlSSAc2.kssa;
-  sub tlKII tlSSAc2' by tlSSAc2.kssa;
-  sub tlKU tlSSAc2' by tlSSAc2.kssa;
-  sub tlKUU tlSSAc2' by tlSSAc2.kssa;
-  sub tlKE tlSSAc2' by tlSSAc2.kssa;
-  sub tlKEE tlSSAc2' by tlSSAc2.kssa;
-  sub tlKAI tlSSAc2' by tlSSAc2.kssa;
-  sub tlKO tlSSAc2' by tlSSAc2.kssa;
-  sub tlKOO tlSSAc2' by tlSSAc2.kssa;
-  sub tlKAU tlSSAc2' by tlSSAc2.kssa;
-} akhn_ssa_alt;
 
-lookup akhn_ssma_alt {
-  sub tlKA tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKI tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKII tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKE tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKEE tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKO tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKOO tlSSAc2' tlMAc2' by tlSSMAc2.01;
-} akhn_ssma_alt;
+#---------------
+
+lookup GSUB_LOOKUP_00012 
+{
+ lookupflag 0;
+    sub L periodcentered by Ldot;
+    sub l periodcentered by ldot;
+} GSUB_LOOKUP_00012;
+
+#---------------
+
+lookup GSUB_LOOKUP_00013 
+{
+ lookupflag 0;
+    sub A by ordfeminine;
+    sub O by ordmasculine;
+    sub a by ordfeminine;
+    sub o by ordmasculine;
+} GSUB_LOOKUP_00013;
+
+
+#---- LOCL ----
+
+lookup GSUB_LOOKUP_00002 
+{
+ lookupflag 0;
+    sub Scedilla by Scommaaccent;
+    sub Tcedilla by Tcommaaccent;
+    sub scedilla by scommaaccent;
+    sub tcedilla by tcommaaccent;
+} GSUB_LOOKUP_00002;
+
+
+lookup GSUB_LOOKUP_00003 
+{
+ lookupflag 0;
+    sub Scedilla by Scommaaccent;
+    sub Tcedilla by Tcommaaccent;
+    sub scedilla by scommaaccent;
+    sub tcedilla by tcommaaccent;
+} GSUB_LOOKUP_00003;
+
+
+lookup GSUB_LOOKUP_00004 
+{
+ lookupflag 0;
+    sub [l ]' lookup GSUB_LOOKUP_00012 [periodcentered ]' [l ] ;
+    sub [L ]' lookup GSUB_LOOKUP_00012 [periodcentered ]' [L ] ;
+} GSUB_LOOKUP_00004;
+
+#---- SUPS ----
+
+lookup GSUB_LOOKUP_00005 
+{
+ lookupflag 0;
+    sub one by onesuperior;
+    sub two by twosuperior;
+    sub three by threesuperior;
+    sub four by foursuperior;
+} GSUB_LOOKUP_00005;
+
+#---- FRAC ----
+
+lookup GSUB_LOOKUP_00006 
+{
+ lookupflag 0;
+    sub one slash two by onehalf;
+    sub one slash four by onequarter;
+    sub three slash four by threequarters;
+} GSUB_LOOKUP_00006;
+
+
+#---- ORDN ----
+
+lookup GSUB_LOOKUP_00007 
+{
+ lookupflag 0;
+    sub [zero one two three four five six seven eight nine ] [A a ]' lookup GSUB_LOOKUP_00013 ;
+    sub [zero one two three four five six seven eight nine ] [O o ]' lookup GSUB_LOOKUP_00013 ;
+} GSUB_LOOKUP_00007;
+
+
+#---- LNUM ----
+
+lookup GSUB_LOOKUP_00008 
+{
+ lookupflag 0;
+    sub zero by zero.lf;
+    sub one by one.lf;
+    sub two by two.lf;
+    sub three by three.lf;
+    sub four by four.lf;
+    sub five by five.lf;
+    sub six by six.lf;
+    sub seven by seven.lf;
+    sub eight by eight.lf;
+    sub nine by nine.lf;
+} GSUB_LOOKUP_00008;
+
+
+#---- ONUM ----
+
+lookup GSUB_LOOKUP_00009 
+{
+ lookupflag 0;
+    sub zero.lf by zero;
+    sub one.lf by one;
+    sub two.lf by two;
+    sub three.lf by three;
+    sub four.lf by four;
+    sub five.lf by five;
+    sub six.lf by six;
+    sub seven.lf by seven;
+    sub eight.lf by eight;
+    sub nine.lf by nine;
+} GSUB_LOOKUP_00009;
+
+
+#---- CASE ----
+
+lookup GSUB_LOOKUP_00010 
+{
+ lookupflag 0;
+    sub zero by zero.lf;
+    sub one by one.lf;
+    sub two by two.lf;
+    sub three by three.lf;
+    sub four by four.lf;
+    sub five by five.lf;
+    sub six by six.lf;
+    sub seven by seven.lf;
+    sub eight by eight.lf;
+    sub nine by nine.lf;
+} GSUB_LOOKUP_00010;
+
+
+#---- LIGA ----
+
+lookup GSUB_LOOKUP_00011 
+{
+ lookupflag 0;
+    sub f i by fi;
+    sub f l by fl;
+} GSUB_LOOKUP_00011;
+
+
+#<<<<<<<<<<<< T E L U G U >>>>>>>>>>>>>>
+
 
 #---- BWLF ----
 
@@ -409,6 +567,16 @@ lookup blwf_tel2 {
 
 #---- BLWS ----
 
+lookup blws_ssma_alt {
+  sub tlKA tlSSAc2' tlMAc2' by tlSSMAc2.01;
+  sub tlKI tlSSAc2' tlMAc2' by tlSSMAc2.01;
+  sub tlKII tlSSAc2' tlMAc2' by tlSSMAc2.01;
+  sub tlKE tlSSAc2' tlMAc2' by tlSSMAc2.01;
+  sub tlKEE tlSSAc2' tlMAc2' by tlSSMAc2.01;
+  sub tlKO tlSSAc2' tlMAc2' by tlSSMAc2.01;
+  sub tlKOO tlSSAc2' tlMAc2' by tlSSMAc2.01;
+} blws_ssma_alt;
+
 lookup blws_precomp1 {
   sub tlNGAc2 tlGAc2 by tlNGGAc2;
   sub tlJAc2 tlNYAc2 by tlJNYAc2;
@@ -425,281 +593,65 @@ lookup blws_tya_c2 {
   sub @NARROW_LETTERS tlTAc2' tlYAc2' by tlTYAc2;
 } blws_tya_c2;
 
+lookup pres_TAI_c2 {
+  sub @NARROW_LETTERS tlVirama' tlTAc2' by tlTAc2.01;
+  sub @NARROW_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.01;
+  sub @WIDE_LETTERS tlTAc2' by tlTAc2.03;
+  sub @WIDE_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.03;
+} pres_TAI_c2;
 
-#---- PRES ----
+#lookup pres_ra_c2 {
+#  sub @NARROW_LETTERS tlRAc2' by tlRAc2.01;
+#  sub @NARROW_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.01;
+#  sub @WIDE_LETTERS tlRAc2' by tlRAc2.03;
+#  sub @WIDE_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.03;
+#} pres_ra_c2;
 
-lookup pres_ra_c2 {
-  sub @NARROW_LETTERS tlRAc2' by tlRAc2.01;
-  sub @WIDE_LETTERS tlRAc2' by tlRAc2.03;
-} pres_ra_c2;
 
-lookup pres_following_c2 {
-  sub @C2 @C2' by @C2.FOLLOWING;
-  sub @C2 @POST_BASE_MATRAS' by @POST_BASE_MATRAS_FOLLOWING;
-} pres_following_c2;
+#---- pres ----
 
-#---- ABVS ----
+lookup c2_to_AI {
+  sub tlAIlengthmark' tlKHAc2 by tlKHAc2;
+  sub tlAIlengthmark' tlGAc2 by tlGAc2;
+  sub tlAIlengthmark' tlGHAc2 by tlGHAc2;
+  sub tlAIlengthmark' tlNGAc2 by tlNGAc2;
+  sub tlAIlengthmark' tlJAc2 by tlJAc2;
+  sub tlAIlengthmark' tlJHAc2 by tlJHAc2;
+  sub tlAIlengthmark' tlNYAc2 by tlNYAc2;
+  sub tlAIlengthmark' tlTTAc2 by tlTTAc2;
+  sub tlAIlengthmark' tlTTHAc2 by tlTTHAc2;
+  sub tlAIlengthmark' tlDDAc2 by tlDDAc2;
+  sub tlAIlengthmark' tlDDHAc2 by tlDDHAc2;
+  sub tlAIlengthmark' tlNNAc2 by tlNNAc2;
+ # sub tlAIlengthmark' tlTAc2 by tlTAc2;
+  sub tlAIlengthmark' tlTHAc2 by tlTHAc2;
+  sub tlAIlengthmark' tlDAc2 by tlDAc2;
+  sub tlAIlengthmark' tlDHAc2 by tlDHAc2;
+  sub tlAIlengthmark' tlLAc2 by tlLAc2;
+  sub tlAIlengthmark' tlSSAc2 by tlSSAc2;
+  sub tlAIlengthmark' tlHAc2 by tlHAc2;
+  sub tlAIlengthmark' tlKSSAc2 by tlKSSAc2;
+  sub tlAIlengthmark' tlTRAc2 by tlTRAc2;
+} c2_to_AI;
 
-lookup abvs_1 { 
-  sub tlKA tlmAA by tlKAA;
-  sub tlKHA tlmAA by tlKHAA;
-  sub tlGA tlmAA by tlGAA;
-  sub tlGHA tlmAA by tlGHAA;
-  sub tlNGA tlmAA by tlNGAA;
-  sub tlCA tlmAA by tlCAA;
-  sub tlCHA tlmAA by tlCHAA;
-  sub tlJA tlmAA by tlJAA;
-  sub tlJHA tlmAA by tlJHAA;
-  sub tlNYA tlmAA by tlNYAA;
-  sub tlTTA tlmAA by tlTTAA;
-  sub tlTTHA tlmAA by tlTTHAA;
-  sub tlDDA tlmAA by tlDDAA;
-  sub tlDDHA tlmAA by tlDDHAA;
-  sub tlNNA tlmAA by tlNNAA;
-  sub tlTA tlmAA by tlTAA;
-  sub tlTHA tlmAA by tlTHAA;
-  sub tlDA tlmAA by tlDAA;
-  sub tlDHA tlmAA by tlDHAA;
-  sub tlNA tlmAA by tlNAA;
-  sub tlPA tlmAA by tlPAA;
-  sub tlPHA tlmAA by tlPHAA;
-  sub tlBA tlmAA by tlBAA;
-  sub tlBHA tlmAA by tlBHAA;
-  sub tlMA tlmAA by tlMAA;
-  sub tlYA tlmAA by tlYAA;
-  sub tlRA tlmAA by tlRAA;
-  sub tlLA tlmAA by tlLAA;
-  sub tlVA tlmAA by tlVAA;
-  sub tlSHA tlmAA by tlSHAA;
-  sub tlSSA tlmAA by tlSSAA;
-  sub tlSA tlmAA by tlSAA;
-  sub tlHA tlmAA by tlHAA;
-  sub tlLLA tlmAA by tlLLAA;
-} abvs_1;
+lookup AI_to_c2 {
+  sub @C2_BELOW  by tlAIlengthmark.01;
+} AI_to_c2;
 
-lookup abvs_2 { 
-  sub tlKA tlmI by tlKI;
-  sub tlKHA tlmI by tlKHI;
-  sub tlGA tlmI by tlGI;
-  sub tlGHA tlmI by tlGHI;
-  sub tlNGA tlmI by tlNGI;
-  sub tlCA tlmI by tlCI;
-  sub tlCHA tlmI by tlCHI;
-  sub tlJA tlmI by tlJI;
-  sub tlJHA tlmI by tlJHI;
-  sub tlNYA tlmI by tlNYI;
-  sub tlTTA tlmI by tlTTI;
-  sub tlTTHA tlmI by tlTTHI;
-  sub tlDDA tlmI by tlDDI;
-  sub tlDDHA tlmI by tlDDHI;
-  sub tlNNA tlmI by tlNNI;
-  sub tlTA tlmI by tlTI;
-  sub tlTHA tlmI by tlTHI;
-  sub tlDA tlmI by tlDI;
-  sub tlDHA tlmI by tlDHI;
-  sub tlNA tlmI by tlNI;
-  sub tlPA tlmI by tlPI;
-  sub tlPHA tlmI by tlPHI;
-  sub tlBA tlmI by tlBI;
-  sub tlBHA tlmI by tlBHI;
-  sub tlMA tlmI by tlMI;
-  sub tlYA tlmI by tlYI;
-  sub tlRA tlmI by tlRI;
-  sub tlLA tlmI by tlLI;
-  sub tlVA tlmI by tlVI;
-  sub tlSHA tlmI by tlSHI;
-  sub tlSSA tlmI by tlSSI;
-  sub tlSA tlmI by tlSI;
-  sub tlHA tlmI by tlHI;
-  sub tlLLA tlmI by tlLLI;
-} abvs_2;
+## ? ignore sub tlmE tlAIlengthmark [tlRAc2 tlTAc2]';  # RAc2 is placed below AIlengthmark.
 
-lookup abvs_3 { 
-  sub tlKA tlmII by tlKII;
-  sub tlKHA tlmII by tlKHII;
-  sub tlGA tlmII by tlGII;
-  sub tlGHA tlmII by tlGHII;
-  sub tlNGA tlmII by tlNGII;
-  sub tlCA tlmII by tlCII;
-  sub tlCHA tlmII by tlCHII;
-  sub tlJA tlmII by tlJII;
-  sub tlJHA tlmII by tlJHII;
-  sub tlNYA tlmII by tlNYII;
-  sub tlTTA tlmII by tlTTII;
-  sub tlTTHA tlmII by tlTTHII;
-  sub tlDDA tlmII by tlDDII;
-  sub tlDDHA tlmII by tlDDHII;
-  sub tlNNA tlmII by tlNNII;
-  sub tlTA tlmII by tlTII;
-  sub tlTHA tlmII by tlTHII;
-  sub tlDA tlmII by tlDII;
-  sub tlDHA tlmII by tlDHII;
-  sub tlNA tlmII by tlNII;
-  sub tlPA tlmII by tlPII;
-  sub tlPHA tlmII by tlPHII;
-  sub tlBA tlmII by tlBII;
-  sub tlBHA tlmII by tlBHII;
-  sub tlMA tlmII by tlMII;
-  sub tlYA tlmII by tlYII;
-  sub tlRA tlmII by tlRII;
-  sub tlLA tlmII by tlLII;
-  sub tlVA tlmII by tlVII;
-  sub tlSHA tlmII by tlSHII;
-  sub tlSSA tlmII by tlSSII;
-  sub tlSA tlmII by tlSII;
-  sub tlHA tlmII by tlHII;
-  sub tlLLA tlmII by tlLLII;
-} abvs_3;
+lookup pres_ai_lengthmark {
+  sub 
+  tlAIlengthmark' lookup c2_to_AI
+  @C2_BELOW' lookup AI_to_c2;
+} pres_ai_lengthmark;
 
-lookup abvs_4 { 
-  sub tlKA tlmU by tlKU;
-  sub tlKHA tlmU by tlKHU;
-  sub tlGA tlmU by tlGU;
-  sub tlGHA tlmU by tlGHU;
-  sub tlNGA tlmU by tlNGU;
-  sub tlCA tlmU by tlCU;
-  sub tlCHA tlmU by tlCHU;
-  sub tlJA tlmU by tlJU;
-  sub tlJHA tlmU by tlJHU;
-  sub tlNYA tlmU by tlNYU;
-  sub tlTTA tlmU by tlTTU;
-  sub tlTTHA tlmU by tlTTHU;
-  sub tlDDA tlmU by tlDDU;
-  sub tlDDHA tlmU by tlDDHU;
-  sub tlNNA tlmU by tlNNU;
-  sub tlTA tlmU by tlTU;
-  sub tlTHA tlmU by tlTHU;
-  sub tlDA tlmU by tlDU;
-  sub tlDHA tlmU by tlDHU;
-  sub tlNA tlmU by tlNU;
-  sub tlPA tlmU by tlPU;
-  sub tlPHA tlmU by tlPHU;
-  sub tlBA tlmU by tlBU;
-  sub tlBHA tlmU by tlBHU;
-  sub tlMA tlmU by tlMU;
-  sub tlYA tlmU by tlYU;
-  sub tlRA tlmU by tlRU;
-  sub tlLA tlmU by tlLU;
-  sub tlVA tlmU by tlVU;
-  sub tlSHA tlmU by tlSHU;
-  sub tlSSA tlmU by tlSSU;
-  sub tlSA tlmU by tlSU;
-  sub tlHA tlmU by tlHU;
-  sub tlLLA tlmU by tlLLU;
-} abvs_4;
+lookup pres_c2_spacing {
+  sub[ @POST_BASE_MATRAS @AIlengthmark @C2 @C2_LIGATURE @C2_FOLLOWING ] @C2' by @C2_FOLLOWING;  
+  sub[ @POST_BASE_MATRAS @AIlengthmark @C2 @C2_LIGATURE @C2_FOLLOWING ] @POST_BASE_MATRAS' by @POST_BASE_MATRAS_FOLLOWING;
+} pres_c2_spacing;
 
-lookup abvs_5 { 
-  sub tlKA tlmUU by tlKUU;
-  sub tlKHA tlmUU by tlKHUU;
-  sub tlGA tlmUU by tlGUU;
-  sub tlGHA tlmUU by tlGHUU;
-  sub tlNGA tlmUU by tlNGUU;
-  sub tlCA tlmUU by tlCUU;
-  sub tlCHA tlmUU by tlCHUU;
-  sub tlJA tlmUU by tlJUU;
-  sub tlJHA tlmUU by tlJHUU;
-  sub tlNYA tlmUU by tlNYUU;
-  sub tlTTA tlmUU by tlTTUU;
-  sub tlTTHA tlmUU by tlTTHUU;
-  sub tlDDA tlmUU by tlDDUU;
-  sub tlDDHA tlmUU by tlDDHUU;
-  sub tlNNA tlmUU by tlNNUU;
-  sub tlTA tlmUU by tlTUU;
-  sub tlTHA tlmUU by tlTHUU;
-  sub tlDA tlmUU by tlDUU;
-  sub tlDHA tlmUU by tlDHUU;
-  sub tlNA tlmUU by tlNUU;
-  sub tlPA tlmUU by tlPUU;
-  sub tlPHA tlmUU by tlPHUU;
-  sub tlBA tlmUU by tlBUU;
-  sub tlBHA tlmUU by tlBHUU;
-  sub tlMA tlmUU by tlMUU;
-  sub tlYA tlmUU by tlYUU;
-  sub tlRA tlmUU by tlRUU;
-  sub tlLA tlmUU by tlLUU;
-  sub tlVA tlmUU by tlVUU;
-  sub tlSHA tlmUU by tlSHUU;
-  sub tlSSA tlmUU by tlSSUU;
-  sub tlSA tlmUU by tlSUU;
-  sub tlHA tlmUU by tlHUU;
-  sub tlLLA tlmUU by tlLLUU;
-} abvs_5;
-
-lookup abvs_6 { 
-  sub tlKA tlmE by tlKE;
-  sub tlKHA tlmE by tlKHE;
-  sub tlGA tlmE by tlGE;
-  sub tlGHA tlmE by tlGHE;
-  sub tlNGA tlmE by tlNGE;
-  sub tlCA tlmE by tlCE;
-  sub tlCHA tlmE by tlCHE;
-  sub tlJA tlmE by tlJE;
-  sub tlJHA tlmE by tlJHE;
-  sub tlNYA tlmE by tlNYE;
-  sub tlTTA tlmE by tlTTE;
-  sub tlTTHA tlmE by tlTTHE;
-  sub tlDDA tlmE by tlDDE;
-  sub tlDDHA tlmE by tlDDHE;
-  sub tlNNA tlmE by tlNNE;
-  sub tlTA tlmE by tlTE;
-  sub tlTHA tlmE by tlTHE;
-  sub tlDA tlmE by tlDE;
-  sub tlDHA tlmE by tlDHE;
-  sub tlNA tlmE by tlNE;
-  sub tlPA tlmE by tlPE;
-  sub tlPHA tlmE by tlPHE;
-  sub tlBA tlmE by tlBE;
-  sub tlBHA tlmE by tlBHE;
-  sub tlMA tlmE by tlME;
-  sub tlYA tlmE by tlYE;
-  sub tlRA tlmE by tlRE;
-  sub tlLA tlmE by tlLE;
-  sub tlVA tlmE by tlVE;
-  sub tlSHA tlmE by tlSHE;
-  sub tlSSA tlmE by tlSSE;
-  sub tlSA tlmE by tlSE;
-  sub tlHA tlmE by tlHE;
-  sub tlLLA tlmE by tlLLE;
-} abvs_6;
-
-lookup abvs_7 { 
-  sub tlKA tlmEE by tlKEE;
-  sub tlKHA tlmEE by tlKHEE;
-  sub tlGA tlmEE by tlGEE;
-  sub tlGHA tlmEE by tlGHEE;
-  sub tlNGA tlmEE by tlNGEE;
-  sub tlCA tlmEE by tlCEE;
-  sub tlCHA tlmEE by tlCHEE;
-  sub tlJA tlmEE by tlJEE;
-  sub tlJHA tlmEE by tlJHEE;
-  sub tlNYA tlmEE by tlNYEE;
-  sub tlTTA tlmEE by tlTTEE;
-  sub tlTTHA tlmEE by tlTTHEE;
-  sub tlDDA tlmEE by tlDDEE;
-  sub tlDDHA tlmEE by tlDDHEE;
-  sub tlNNA tlmEE by tlNNEE;
-  sub tlTA tlmEE by tlTEE;
-  sub tlTHA tlmEE by tlTHEE;
-  sub tlDA tlmEE by tlDEE;
-  sub tlDHA tlmEE by tlDHEE;
-  sub tlNA tlmEE by tlNEE;
-  sub tlPA tlmEE by tlPEE;
-  sub tlPHA tlmEE by tlPHEE;
-  sub tlBA tlmEE by tlBEE;
-  sub tlBHA tlmEE by tlBHEE;
-  sub tlMA tlmEE by tlMEE;
-  sub tlYA tlmEE by tlYEE;
-  sub tlRA tlmEE by tlREE;
-  sub tlLA tlmEE by tlLEE;
-  sub tlVA tlmEE by tlVEE;
-  sub tlSHA tlmEE by tlSHEE;
-  sub tlSSA tlmEE by tlSSEE;
-  sub tlSA tlmEE by tlSEE;
-  sub tlHA tlmEE by tlHEE;
-  sub tlLLA tlmEE by tlLLEE;
-} abvs_7;
-
-lookup abvs_8 { 
+lookup pres_AI { 
   sub tlKA tlmE tlAIlengthmark by tlKAI;
   sub tlKHA tlmE tlAIlengthmark by tlKHAI;
   sub tlGA tlmE tlAIlengthmark by tlGAI;
@@ -734,9 +686,247 @@ lookup abvs_8 {
   sub tlSA tlmE tlAIlengthmark by tlSAI;
   sub tlHA tlmE tlAIlengthmark by tlHAI;
   sub tlLLA tlmE tlAIlengthmark by tlLLAI;
-} abvs_8;
+} pres_AI;
 
-lookup abvs_9 { 
+lookup pres_all { 
+  sub tlKA tlmAA by tlKAA;
+  sub tlKHA tlmAA by tlKHAA;
+  sub tlGA tlmAA by tlGAA;
+  sub tlGHA tlmAA by tlGHAA;
+  sub tlNGA tlmAA by tlNGAA;
+  sub tlCA tlmAA by tlCAA;
+  sub tlCHA tlmAA by tlCHAA;
+  sub tlJA tlmAA by tlJAA;
+  sub tlJHA tlmAA by tlJHAA;
+  sub tlNYA tlmAA by tlNYAA;
+  sub tlTTA tlmAA by tlTTAA;
+  sub tlTTHA tlmAA by tlTTHAA;
+  sub tlDDA tlmAA by tlDDAA;
+  sub tlDDHA tlmAA by tlDDHAA;
+  sub tlNNA tlmAA by tlNNAA;
+  sub tlTA tlmAA by tlTAA;
+  sub tlTHA tlmAA by tlTHAA;
+  sub tlDA tlmAA by tlDAA;
+  sub tlDHA tlmAA by tlDHAA;
+  sub tlNA tlmAA by tlNAA;
+  sub tlPA tlmAA by tlPAA;
+  sub tlPHA tlmAA by tlPHAA;
+  sub tlBA tlmAA by tlBAA;
+  sub tlBHA tlmAA by tlBHAA;
+  sub tlMA tlmAA by tlMAA;
+  sub tlYA tlmAA by tlYAA;
+  sub tlRA tlmAA by tlRAA;
+  sub tlLA tlmAA by tlLAA;
+  sub tlVA tlmAA by tlVAA;
+  sub tlSHA tlmAA by tlSHAA;
+  sub tlSSA tlmAA by tlSSAA;
+  sub tlSA tlmAA by tlSAA;
+  sub tlHA tlmAA by tlHAA;
+  sub tlLLA tlmAA by tlLLAA;
+  sub tlKA tlmI by tlKI;
+  sub tlKHA tlmI by tlKHI;
+  sub tlGA tlmI by tlGI;
+  sub tlGHA tlmI by tlGHI;
+  sub tlNGA tlmI by tlNGI;
+  sub tlCA tlmI by tlCI;
+  sub tlCHA tlmI by tlCHI;
+  sub tlJA tlmI by tlJI;
+  sub tlJHA tlmI by tlJHI;
+  sub tlNYA tlmI by tlNYI;
+  sub tlTTA tlmI by tlTTI;
+  sub tlTTHA tlmI by tlTTHI;
+  sub tlDDA tlmI by tlDDI;
+  sub tlDDHA tlmI by tlDDHI;
+  sub tlNNA tlmI by tlNNI;
+  sub tlTA tlmI by tlTI;
+  sub tlTHA tlmI by tlTHI;
+  sub tlDA tlmI by tlDI;
+  sub tlDHA tlmI by tlDHI;
+  sub tlNA tlmI by tlNI;
+  sub tlPA tlmI by tlPI;
+  sub tlPHA tlmI by tlPHI;
+  sub tlBA tlmI by tlBI;
+  sub tlBHA tlmI by tlBHI;
+  sub tlMA tlmI by tlMI;
+  sub tlYA tlmI by tlYI;
+  sub tlRA tlmI by tlRI;
+  sub tlLA tlmI by tlLI;
+  sub tlVA tlmI by tlVI;
+  sub tlSHA tlmI by tlSHI;
+  sub tlSSA tlmI by tlSSI;
+  sub tlSA tlmI by tlSI;
+  sub tlHA tlmI by tlHI;
+  sub tlLLA tlmI by tlLLI; 
+  sub tlKA tlmII by tlKII;
+  sub tlKHA tlmII by tlKHII;
+  sub tlGA tlmII by tlGII;
+  sub tlGHA tlmII by tlGHII;
+  sub tlNGA tlmII by tlNGII;
+  sub tlCA tlmII by tlCII;
+  sub tlCHA tlmII by tlCHII;
+  sub tlJA tlmII by tlJII;
+  sub tlJHA tlmII by tlJHII;
+  sub tlNYA tlmII by tlNYII;
+  sub tlTTA tlmII by tlTTII;
+  sub tlTTHA tlmII by tlTTHII;
+  sub tlDDA tlmII by tlDDII;
+  sub tlDDHA tlmII by tlDDHII;
+  sub tlNNA tlmII by tlNNII;
+  sub tlTA tlmII by tlTII;
+  sub tlTHA tlmII by tlTHII;
+  sub tlDA tlmII by tlDII;
+  sub tlDHA tlmII by tlDHII;
+  sub tlNA tlmII by tlNII;
+  sub tlPA tlmII by tlPII;
+  sub tlPHA tlmII by tlPHII;
+  sub tlBA tlmII by tlBII;
+  sub tlBHA tlmII by tlBHII;
+  sub tlMA tlmII by tlMII;
+  sub tlYA tlmII by tlYII;
+  sub tlRA tlmII by tlRII;
+  sub tlLA tlmII by tlLII;
+  sub tlVA tlmII by tlVII;
+  sub tlSHA tlmII by tlSHII;
+  sub tlSSA tlmII by tlSSII;
+  sub tlSA tlmII by tlSII;
+  sub tlHA tlmII by tlHII;
+  sub tlLLA tlmII by tlLLII; 
+  sub tlKA tlmU by tlKU;
+  sub tlKHA tlmU by tlKHU;
+  sub tlGA tlmU by tlGU;
+  sub tlGHA tlmU by tlGHU;
+  sub tlNGA tlmU by tlNGU;
+  sub tlCA tlmU by tlCU;
+  sub tlCHA tlmU by tlCHU;
+  sub tlJA tlmU by tlJU;
+  sub tlJHA tlmU by tlJHU;
+  sub tlNYA tlmU by tlNYU;
+  sub tlTTA tlmU by tlTTU;
+  sub tlTTHA tlmU by tlTTHU;
+  sub tlDDA tlmU by tlDDU;
+  sub tlDDHA tlmU by tlDDHU;
+  sub tlNNA tlmU by tlNNU;
+  sub tlTA tlmU by tlTU;
+  sub tlTHA tlmU by tlTHU;
+  sub tlDA tlmU by tlDU;
+  sub tlDHA tlmU by tlDHU;
+  sub tlNA tlmU by tlNU;
+  sub tlPA tlmU by tlPU;
+  sub tlPHA tlmU by tlPHU;
+  sub tlBA tlmU by tlBU;
+  sub tlBHA tlmU by tlBHU;
+  sub tlMA tlmU by tlMU;
+  sub tlYA tlmU by tlYU;
+  sub tlRA tlmU by tlRU;
+  sub tlLA tlmU by tlLU;
+  sub tlVA tlmU by tlVU;
+  sub tlSHA tlmU by tlSHU;
+  sub tlSSA tlmU by tlSSU;
+  sub tlSA tlmU by tlSU;
+  sub tlHA tlmU by tlHU;
+  sub tlLLA tlmU by tlLLU; 
+  sub tlKA tlmUU by tlKUU;
+  sub tlKHA tlmUU by tlKHUU;
+  sub tlGA tlmUU by tlGUU;
+  sub tlGHA tlmUU by tlGHUU;
+  sub tlNGA tlmUU by tlNGUU;
+  sub tlCA tlmUU by tlCUU;
+  sub tlCHA tlmUU by tlCHUU;
+  sub tlJA tlmUU by tlJUU;
+  sub tlJHA tlmUU by tlJHUU;
+  sub tlNYA tlmUU by tlNYUU;
+  sub tlTTA tlmUU by tlTTUU;
+  sub tlTTHA tlmUU by tlTTHUU;
+  sub tlDDA tlmUU by tlDDUU;
+  sub tlDDHA tlmUU by tlDDHUU;
+  sub tlNNA tlmUU by tlNNUU;
+  sub tlTA tlmUU by tlTUU;
+  sub tlTHA tlmUU by tlTHUU;
+  sub tlDA tlmUU by tlDUU;
+  sub tlDHA tlmUU by tlDHUU;
+  sub tlNA tlmUU by tlNUU;
+  sub tlPA tlmUU by tlPUU;
+  sub tlPHA tlmUU by tlPHUU;
+  sub tlBA tlmUU by tlBUU;
+  sub tlBHA tlmUU by tlBHUU;
+  sub tlMA tlmUU by tlMUU;
+  sub tlYA tlmUU by tlYUU;
+  sub tlRA tlmUU by tlRUU;
+  sub tlLA tlmUU by tlLUU;
+  sub tlVA tlmUU by tlVUU;
+  sub tlSHA tlmUU by tlSHUU;
+  sub tlSSA tlmUU by tlSSUU;
+  sub tlSA tlmUU by tlSUU;
+  sub tlHA tlmUU by tlHUU;
+  sub tlLLA tlmUU by tlLLUU; 
+  sub tlKA tlmE by tlKE;
+  sub tlKHA tlmE by tlKHE;
+  sub tlGA tlmE by tlGE;
+  sub tlGHA tlmE by tlGHE;
+  sub tlNGA tlmE by tlNGE;
+  sub tlCA tlmE by tlCE;
+  sub tlCHA tlmE by tlCHE;
+  sub tlJA tlmE by tlJE;
+  sub tlJHA tlmE by tlJHE;
+  sub tlNYA tlmE by tlNYE;
+  sub tlTTA tlmE by tlTTE;
+  sub tlTTHA tlmE by tlTTHE;
+  sub tlDDA tlmE by tlDDE;
+  sub tlDDHA tlmE by tlDDHE;
+  sub tlNNA tlmE by tlNNE;
+  sub tlTA tlmE by tlTE;
+  sub tlTHA tlmE by tlTHE;
+  sub tlDA tlmE by tlDE;
+  sub tlDHA tlmE by tlDHE;
+  sub tlNA tlmE by tlNE;
+  sub tlPA tlmE by tlPE;
+  sub tlPHA tlmE by tlPHE;
+  sub tlBA tlmE by tlBE;
+  sub tlBHA tlmE by tlBHE;
+  sub tlMA tlmE by tlME;
+  sub tlYA tlmE by tlYE;
+  sub tlRA tlmE by tlRE;
+  sub tlLA tlmE by tlLE;
+  sub tlVA tlmE by tlVE;
+  sub tlSHA tlmE by tlSHE;
+  sub tlSSA tlmE by tlSSE;
+  sub tlSA tlmE by tlSE;
+  sub tlHA tlmE by tlHE;
+  sub tlLLA tlmE by tlLLE; 
+  sub tlKA tlmEE by tlKEE;
+  sub tlKHA tlmEE by tlKHEE;
+  sub tlGA tlmEE by tlGEE;
+  sub tlGHA tlmEE by tlGHEE;
+  sub tlNGA tlmEE by tlNGEE;
+  sub tlCA tlmEE by tlCEE;
+  sub tlCHA tlmEE by tlCHEE;
+  sub tlJA tlmEE by tlJEE;
+  sub tlJHA tlmEE by tlJHEE;
+  sub tlNYA tlmEE by tlNYEE;
+  sub tlTTA tlmEE by tlTTEE;
+  sub tlTTHA tlmEE by tlTTHEE;
+  sub tlDDA tlmEE by tlDDEE;
+  sub tlDDHA tlmEE by tlDDHEE;
+  sub tlNNA tlmEE by tlNNEE;
+  sub tlTA tlmEE by tlTEE;
+  sub tlTHA tlmEE by tlTHEE;
+  sub tlDA tlmEE by tlDEE;
+  sub tlDHA tlmEE by tlDHEE;
+  sub tlNA tlmEE by tlNEE;
+  sub tlPA tlmEE by tlPEE;
+  sub tlPHA tlmEE by tlPHEE;
+  sub tlBA tlmEE by tlBEE;
+  sub tlBHA tlmEE by tlBHEE;
+  sub tlMA tlmEE by tlMEE;
+  sub tlYA tlmEE by tlYEE;
+  sub tlRA tlmEE by tlREE;
+  sub tlLA tlmEE by tlLEE;
+  sub tlVA tlmEE by tlVEE;
+  sub tlSHA tlmEE by tlSHEE;
+  sub tlSSA tlmEE by tlSSEE;
+  sub tlSA tlmEE by tlSEE;
+  sub tlHA tlmEE by tlHEE;
+  sub tlLLA tlmEE by tlLLEE; 
   sub tlKA tlmO by tlKO;
   sub tlKHA tlmO by tlKHO;
   sub tlGA tlmO by tlGO;
@@ -770,10 +960,7 @@ lookup abvs_9 {
   sub tlSSA tlmO by tlSSO;
   sub tlSA tlmO by tlSO;
   sub tlHA tlmO by tlHO;
-  sub tlLLA tlmO by tlLLO;
-} abvs_9;
-
-lookup abvs_10 { 
+  sub tlLLA tlmO by tlLLO; 
   sub tlKA tlmOO by tlKOO;
   sub tlKHA tlmOO by tlKHOO;
   sub tlGA tlmOO by tlGOO;
@@ -808,9 +995,6 @@ lookup abvs_10 {
   sub tlSA tlmOO by tlSOO;
   sub tlHA tlmOO by tlHOO;
   sub tlLLA tlmOO by tlLLOO;
-} abvs_10;
-
-lookup abvs_11 { 
   sub tlKA tlmAU by tlKAU;
   sub tlKHA tlmAU by tlKHAU;
   sub tlGA tlmAU by tlGAU;
@@ -845,14 +1029,47 @@ lookup abvs_11 {
   sub tlSA tlmAU by tlSAU;
   sub tlHA tlmAU by tlHAU;
   sub tlLLA tlmAU by tlLLAU;
-} abvs_11;
+} pres_all;
 
-#---- PSTS (contextual alternates) ----
+lookup pres_ta_c2 {
+  sub @NARROW_LETTERS tlTAc2' by tlTAc2.01;
+  sub @NARROW_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.01;
+  sub @WIDE_LETTERS tlTAc2' by tlTAc2.03;
+  sub @WIDE_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.03;
+} pres_ta_c2;
+
+lookup pres_taAI_c2 {
+sub tlTAc2.01 @AIlengthmark by tlTAIlengthmarkc2.01;
+} pres_taAI_c2;
+
+lookup pres_ra_c2 {
+  sub @NARROW_LETTERS tlRAc2' by tlRAc2.01;
+  sub @NARROW_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.01;
+  sub @WIDE_LETTERS tlRAc2' by tlRAc2.03;
+  sub @WIDE_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.03;
+} pres_ra_c2;
+
+lookup pres_ssa_alt {
+  sub tlKA tlSSAc2' by tlSSAc2.kssa;
+  sub tlKAA tlSSAc2' by tlSSAc2.kssa;
+  sub tlKI tlSSAc2' by tlSSAc2.kssa;
+  sub tlKII tlSSAc2' by tlSSAc2.kssa;
+  sub tlKU tlSSAc2' by tlSSAc2.kssa;
+  sub tlKUU tlSSAc2' by tlSSAc2.kssa;
+  sub tlKE tlSSAc2' by tlSSAc2.kssa;
+  sub tlKEE tlSSAc2' by tlSSAc2.kssa;
+  sub tlKAI tlSSAc2' by tlSSAc2.kssa;
+  sub tlKO tlSSAc2' by tlSSAc2.kssa;
+  sub tlKOO tlSSAc2' by tlSSAc2.kssa;
+  sub tlKAU tlSSAc2' by tlSSAc2.kssa;
+} pres_ssa_alt;
+
 
 #---- HALN ----
 
- lookup haln {
-#   lookupflag IgnoreMarks;
+lookup haln {
+#lookupflag IgnoreMarks;
+#lookupflag 256;
   sub tlKA tlVirama by tlK;
   sub tlKHA tlVirama by tlKH;
   sub tlGA tlVirama by tlG;
@@ -889,77 +1106,152 @@ lookup abvs_11 {
   sub tlLLA tlVirama by tlLL;
   sub tlRRA tlVirama by tlRR;
   sub tlLLLA tlVirama by tlLLL;
-#   lookupflag 0;
- } haln;
+  # lookupflag 0;
+} haln;
 
 ### ======================== Features ======================== ###
 
-feature akhn {
-    lookup akhn_ssa_alt;
-    lookup akhn_ssma_alt;
-} akhn;
+feature aalt {
+### import of lookup GSUB_LOOKUP_00000;
+    sub A by ordfeminine;
+    sub O by ordmasculine;
+    sub Scedilla by Scommaaccent;
+    sub Tcedilla by Tcommaaccent;
+    sub a by ordfeminine;
+    sub o by ordmasculine;
+    sub scedilla by scommaaccent;
+    sub tcedilla by tcommaaccent;
+    sub zero by zero.lf;
+    sub five by five.lf;
+    sub six by six.lf;
+    sub seven by seven.lf;
+    sub eight by eight.lf;
+    sub nine by nine.lf;
+    sub zero.lf by zero;
+    sub five.lf by five;
+    sub six.lf by six;
+    sub seven.lf by seven;
+    sub eight.lf by eight;
+    sub nine.lf by nine;
+### import of lookup GSUB_LOOKUP_00001;
+    sub one from [onesuperior one.lf];
+    sub two from [twosuperior two.lf];
+    sub three from [threesuperior three.lf];
+    sub four from [foursuperior four.lf];
+    sub one.lf from [one];
+    sub two.lf from [two];
+    sub three.lf from [three];
+    sub four.lf from [four];
+} aalt;
 
-#-------------
+feature case {
+        lookup GSUB_LOOKUP_00010;
+} case;
+
+feature frac {
+        lookup GSUB_LOOKUP_00006;
+} frac;
+
+feature liga {
+        lookup GSUB_LOOKUP_00011;
+} liga;
+
+feature lnum {
+        lookup GSUB_LOOKUP_00008;
+} lnum;
+
+feature onum {
+        lookup GSUB_LOOKUP_00009;
+} onum;
+
+feature ordn {
+        lookup GSUB_LOOKUP_00007;
+} ordn;
+
+feature sups {
+        lookup GSUB_LOOKUP_00005;
+} sups;
+
+feature locl {
+    script latn ; 
+    language CAT  ; 
+        lookup GSUB_LOOKUP_00004;
+    language MOL  ; 
+        lookup GSUB_LOOKUP_00003;
+    language ROM  ; 
+        lookup GSUB_LOOKUP_00002;
+} locl;
+
+
+#=======================================
 
 feature blwf {
-
   script DFLT;
-    lookup blwf_tel2;
-
-  script tel2;
-    lookup blwf_tel2;
-
+	lookup blwf_tel2;
   script telu;
-    lookup blwf_telu;
-
+	lookup blwf_telu;
+  script tel2;
+	lookup blwf_tel2;
 } blwf;
 
 #-------------
 
-
 feature blws {
-    script telu;
-	lookup blws_precomp1;
-	lookup blws_tya_c2;
-    script tel2;
-	lookup blws_precomp1;
-	lookup blws_tya_c2;
+  script DFLT;
+    lookup blws_precomp1;
+    lookup blws_tya_c2;
+    lookup blws_ssma_alt;
+  script telu;
+    lookup blws_precomp1;
+    lookup blws_tya_c2;
+    lookup blws_ssma_alt;
+  script tel2;
+    lookup blws_precomp1;
+    lookup blws_tya_c2;
+    lookup blws_ssma_alt;
 }blws;
 
-#-------------
+# -------------
 
 feature pres {
-    script telu;
+  script DFLT;
+  	lookup pres_ai_lengthmark;
+	lookup pres_c2_spacing;
+	lookup pres_all;
+	lookup pres_AI;
+	lookup pres_ta_c2;
+	lookup pres_taAI_c2;
 	lookup pres_ra_c2;
-	lookup pres_following_c2;
-    script tel2;
+	lookup pres_ssa_alt;
+  script telu;
+  	lookup pres_ai_lengthmark;
+	lookup pres_c2_spacing;
+	lookup pres_all;
+	lookup pres_AI;
+	lookup pres_ta_c2;
+	lookup pres_taAI_c2;
 	lookup pres_ra_c2;
-	lookup pres_following_c2;
+	lookup pres_ssa_alt;
+  script tel2;
+  	lookup pres_ai_lengthmark;
+	lookup pres_c2_spacing;
+	lookup pres_all;
+	lookup pres_AI;
+	lookup pres_ta_c2;
+	lookup pres_taAI_c2;
+	lookup pres_ra_c2;
+	lookup pres_ssa_alt;
 } pres;
 
 # -------------
 	 
- feature haln {
-   lookup haln;
- } haln;
-
+feature haln {
+ script DFLT;
+	lookup haln;
+ script telu;
+	lookup haln;
+ script tel2;
+	lookup haln;
+} haln;
+ 
 # -------------
-
-feature abvs {
-        lookup abvs_1;
-        lookup abvs_2;
-        lookup abvs_3;
-        lookup abvs_4;
-        lookup abvs_5;
-        lookup abvs_6;
-        lookup abvs_7;
-        lookup abvs_8;
-        lookup abvs_9;
-        lookup abvs_10;
-        lookup abvs_11;
-} abvs;
-
-# -------------
-
-
-
