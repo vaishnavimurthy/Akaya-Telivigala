@@ -1,3 +1,4 @@
+
 ### ======================== Classes ======================== ###
 
 @CONSONANTS = [
@@ -139,7 +140,7 @@ tlAIlengthmark.following
  tlDDAc2.following
  tlDDHAc2.following
  tlNNAc2.following
- tlTAc2.following
+ tlTAc2
  tlTHAc2.following
  tlDAc2.following
  tlDHAc2.following
@@ -162,7 +163,7 @@ tlAIlengthmark.following
 ];
 
 @C2_BELOW = [
-# (tlRAc2, tlTAc2 not included - use ligature forms for AIlengthmark)
+# (tlRAc2, tlTAc2, c2ligatures included)
  tlKHAc2
  tlGAc2
  tlGHAc2
@@ -175,14 +176,25 @@ tlAIlengthmark.following
  tlDDAc2
  tlDDHAc2
  tlNNAc2
+ tlTAc2
  tlTHAc2
  tlDAc2
  tlDHAc2
  tlLAc2
  tlSSAc2
  tlHAc2
+ tlRAc2
  tlKSSAc2
  tlTRAc2
+ tlTTRAc2
+ tlTYAc2
+ tlSSMAc2
+ tlSSMAc2.01
+ tlTTLAc2
+ tlSSNNAc2
+ tlNGGAc2
+ tlSSTTHAc2
+ tlJNYAc2
 ];
 
 @C2_POST = [
@@ -245,28 +257,28 @@ tlTAIlengthmarkc2.02
 tlTAIlengthmarkc2.03 
 ];
 
-@C2_ALTS = [ 
+@C2_altS = [ 
 tlSSAc2.kssa 
 ];
 
-@C2_ALTS_RA = [ 
+@C2_altS_RA = [ 
 tlRAc2.01 
 tlRAc2.03 
 ];
 
 @C2_RA = [ 
 tlRAc2 
-@C2_ALTS_RA 
+@C2_altS_RA 
 ];
 
-@C2_ALTS_TA = [ 
+@C2_altS_TA = [ 
 tlTAc2.01 
 tlTAc2.03 
 ];
 
 @C2_TA = [ 
 tlTAc2 
-@C2_ALTS_TA 
+@C2_altS_TA 
 ];
 
 @COMBINING_MARKS = [ 
@@ -278,7 +290,7 @@ tlAIlengthmark
 @C2_LIGATURE 
 @C2_AI_LIGATURE_AI_RA 
 @C2_LIGATURE_AI_TA 
-@C2_ALTS 
+@C2_altS 
 ];
 
 @NARROW_LETTERS = [
@@ -324,6 +336,12 @@ tlAIlengthmark
  tlTA tlT tlTAA tlTAI tlTAU tlTE tlTEE tlTU tlTUU tlTI tlTII tlTO tlTOO
  tlLLLA tlLLL tlRRA tlRR
 ];
+
+@NARROW_E = [ tlNE tlGE tlKE tlRE tlTTHE tlSE ];
+
+@MEDIUM_E = [ tlSHE tlVE tlDE tlDHE tlTHE tlBE tlBHE tlJE tlNGE tlNYE tlCE tlLE tlDDHE tlDDE tlPE tlCHE tlPHE tlKHE tlSSE tlNNE tlNNE tlLLE ];
+
+@WIDE_E = [ tlJHE tlGHE tlHE tlME tlTTE tlYE tlTE ];
 
 ### ======================== Language Systems ======================== ###
 
@@ -567,17 +585,8 @@ lookup blwf_tel2 {
 
 #---- BLWS ----
 
-lookup blws_ssma_alt {
-  sub tlKA tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKI tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKII tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKE tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKEE tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKO tlSSAc2' tlMAc2' by tlSSMAc2.01;
-  sub tlKOO tlSSAc2' tlMAc2' by tlSSMAc2.01;
-} blws_ssma_alt;
 
-lookup blws_precomp1 {
+lookup blws_C2_lig {
   sub tlNGAc2 tlGAc2 by tlNGGAc2;
   sub tlJAc2 tlNYAc2 by tlJNYAc2;
   sub tlTTAc2 tlRAc2 by tlTTRAc2;
@@ -587,30 +596,29 @@ lookup blws_precomp1 {
   sub tlSSAc2 tlMAc2 by tlSSMAc2;
   sub tlSSAc2 tlNNAc2 by tlSSNNAc2;
   sub tlSSAc2 tlTTHAc2 by tlSSTTHAc2;
-} blws_precomp1;
+} blws_C2_lig;
 
-lookup blws_tya_c2 {
+lookup blws_TYA_C2 {
   sub @NARROW_LETTERS tlTAc2' tlYAc2' by tlTYAc2;
-} blws_tya_c2;
-
-lookup pres_TAI_c2 {
-  sub @NARROW_LETTERS tlVirama' tlTAc2' by tlTAc2.01;
-  sub @NARROW_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.01;
-  sub @WIDE_LETTERS tlTAc2' by tlTAc2.03;
-  sub @WIDE_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.03;
-} pres_TAI_c2;
-
-#lookup pres_ra_c2 {
-#  sub @NARROW_LETTERS tlRAc2' by tlRAc2.01;
-#  sub @NARROW_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.01;
-#  sub @WIDE_LETTERS tlRAc2' by tlRAc2.03;
-#  sub @WIDE_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.03;
-#} pres_ra_c2;
-
+} blws_TYA_C2;
 
 #---- pres ----
 
-lookup c2_to_AI {
+lookup pres_TA_C2 {
+  sub @NARROW_LETTERS tlTAc2' by tlTAc2.01;
+  sub @NARROW_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.01;
+  sub @WIDE_LETTERS tlTAc2' by tlTAc2.03;
+  sub @WIDE_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.03;
+} pres_TA_C2;
+
+lookup pres_RA_C2 {
+  sub @NARROW_LETTERS tlRAc2' by tlRAc2.01;
+  sub @NARROW_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.01;
+  sub @WIDE_LETTERS tlRAc2' by tlRAc2.03;
+  sub @WIDE_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.03;
+} pres_RA_C2;
+
+lookup C2_to_AI {
   sub tlAIlengthmark' tlKHAc2 by tlKHAc2;
   sub tlAIlengthmark' tlGAc2 by tlGAc2;
   sub tlAIlengthmark' tlGHAc2 by tlGHAc2;
@@ -623,33 +631,42 @@ lookup c2_to_AI {
   sub tlAIlengthmark' tlDDAc2 by tlDDAc2;
   sub tlAIlengthmark' tlDDHAc2 by tlDDHAc2;
   sub tlAIlengthmark' tlNNAc2 by tlNNAc2;
- # sub tlAIlengthmark' tlTAc2 by tlTAc2;
+  sub tlAIlengthmark' tlTAc2 by tlTAc2;
   sub tlAIlengthmark' tlTHAc2 by tlTHAc2;
   sub tlAIlengthmark' tlDAc2 by tlDAc2;
   sub tlAIlengthmark' tlDHAc2 by tlDHAc2;
   sub tlAIlengthmark' tlLAc2 by tlLAc2;
   sub tlAIlengthmark' tlSSAc2 by tlSSAc2;
   sub tlAIlengthmark' tlHAc2 by tlHAc2;
+  sub tlAIlengthmark' tlRAc2 by tlRAc2;
   sub tlAIlengthmark' tlKSSAc2 by tlKSSAc2;
   sub tlAIlengthmark' tlTRAc2 by tlTRAc2;
-} c2_to_AI;
+  sub tlAIlengthmark' tlTTRAc2 by tlTTRAc2;
+  sub tlAIlengthmark' tlTYAc2 by tlTYAc2;
+  sub tlAIlengthmark' tlSSMAc2 by tlSSMAc2;
+  sub tlAIlengthmark' tlSSMAc2.01 by tlSSMAc2.01;
+  sub tlAIlengthmark' tlTTLAc2 by tlTTLAc2;
+  sub tlAIlengthmark' tlSSNNAc2 by tlSSNNAc2;
+  sub tlAIlengthmark' tlNGGAc2 by tlNGGAc2;
+  sub tlAIlengthmark' tlSSTTHAc2 by tlSSTTHAc2;
+  sub tlAIlengthmark' tlJNYAc2 by tlJNYAc2;
+} C2_to_AI;
 
-lookup AI_to_c2 {
+lookup AI_to_C2 {
   sub @C2_BELOW  by tlAIlengthmark.01;
-} AI_to_c2;
+} AI_to_C2;
 
-## ? ignore sub tlmE tlAIlengthmark [tlRAc2 tlTAc2]';  # RAc2 is placed below AIlengthmark.
-
-lookup pres_ai_lengthmark {
+lookup pres_AI_lengthmark {
   sub 
-  tlAIlengthmark' lookup c2_to_AI
-  @C2_BELOW' lookup AI_to_c2;
-} pres_ai_lengthmark;
+  tlAIlengthmark' lookup C2_to_AI
+  @C2_BELOW' lookup AI_to_C2;
+} pres_AI_lengthmark;
 
-lookup pres_c2_spacing {
-  sub[ @POST_BASE_MATRAS @AIlengthmark @C2 @C2_LIGATURE @C2_FOLLOWING ] @C2' by @C2_FOLLOWING;  
-  sub[ @POST_BASE_MATRAS @AIlengthmark @C2 @C2_LIGATURE @C2_FOLLOWING ] @POST_BASE_MATRAS' by @POST_BASE_MATRAS_FOLLOWING;
-} pres_c2_spacing;
+lookup pres_C2_spacing {
+  sub @C2_POST tlTAc2' by tlTAc2_tall_bellow;
+  sub[ @POST_BASE_MATRAS @AIlengthmark @C2 @C2_LIGATURE @C2_FOLLOWING @C2_LIGATURE ] @C2' by @C2_FOLLOWING;  
+  sub[ @POST_BASE_MATRAS @C2 @C2_LIGATURE @C2_FOLLOWING @C2_LIGATURE ] @POST_BASE_MATRAS' by @POST_BASE_MATRAS_FOLLOWING;
+} pres_C2_spacing;
 
 lookup pres_AI { 
   sub tlKA tlmE tlAIlengthmark by tlKAI;
@@ -1031,25 +1048,29 @@ lookup pres_all {
   sub tlLLA tlmAU by tlLLAU;
 } pres_all;
 
-lookup pres_ta_c2 {
-  sub @NARROW_LETTERS tlTAc2' by tlTAc2.01;
-  sub @NARROW_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.01;
-  sub @WIDE_LETTERS tlTAc2' by tlTAc2.03;
-  sub @WIDE_LETTERS @MATRAS_ALL tlTAc2' by tlTAc2.03;
-} pres_ta_c2;
+lookup pres_TAI_C2 {
+sub @NARROW_E @C2_TA' @AIlengthmark' by tlTAIlengthmarkc2.01;
+sub @MEDIUM_E @C2_TA' @AIlengthmark' by tlTAIlengthmarkc2.02;
+sub @WIDE_E @C2_TA' @AIlengthmark' by tlTAIlengthmarkc2.03;
+} pres_TAI_C2;
 
-lookup pres_taAI_c2 {
-sub tlTAc2.01 @AIlengthmark by tlTAIlengthmarkc2.01;
-} pres_taAI_c2;
+lookup pres_RAI_C2 {
+sub @NARROW_E @C2_RA' @AIlengthmark' by tlRAIlengthmarkc2.01;
+sub @MEDIUM_E @C2_RA' @AIlengthmark' by tlRAIlengthmarkc2.02;
+sub @WIDE_E @C2_RA' @AIlengthmark' by tlRAIlengthmarkc2.03;
+} pres_RAI_C2;
 
-lookup pres_ra_c2 {
-  sub @NARROW_LETTERS tlRAc2' by tlRAc2.01;
-  sub @NARROW_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.01;
-  sub @WIDE_LETTERS tlRAc2' by tlRAc2.03;
-  sub @WIDE_LETTERS @MATRAS_ALL tlRAc2' by tlRAc2.03;
-} pres_ra_c2;
+lookup pres_SSMA_alt {
+  sub tlKA tlSSMAc2' by tlSSMAc2.01;
+  sub tlKI tlSSMAc2' by tlSSMAc2.01;
+  sub tlKII tlSSMAc2' by tlSSMAc2.01;
+  sub tlKE tlSSMAc2' by tlSSMAc2.01;
+  sub tlKEE tlSSMAc2' by tlSSMAc2.01;
+  sub tlKO tlSSMAc2' by tlSSMAc2.01;
+  sub tlKOO tlSSMAc2' by tlSSMAc2.01;
+} pres_SSMA_alt;
 
-lookup pres_ssa_alt {
+lookup pres_SSA_alt {
   sub tlKA tlSSAc2' by tlSSAc2.kssa;
   sub tlKAA tlSSAc2' by tlSSAc2.kssa;
   sub tlKI tlSSAc2' by tlSSAc2.kssa;
@@ -1062,7 +1083,7 @@ lookup pres_ssa_alt {
   sub tlKO tlSSAc2' by tlSSAc2.kssa;
   sub tlKOO tlSSAc2' by tlSSAc2.kssa;
   sub tlKAU tlSSAc2' by tlSSAc2.kssa;
-} pres_ssa_alt;
+} pres_SSA_alt;
 
 
 #---- HALN ----
@@ -1198,49 +1219,55 @@ feature blwf {
 
 feature blws {
   script DFLT;
-    lookup blws_precomp1;
-    lookup blws_tya_c2;
-    lookup blws_ssma_alt;
+	#lookup blws_SSMA_alt;
+	lookup blws_C2_lig;
+	lookup blws_TYA_C2;
   script telu;
-    lookup blws_precomp1;
-    lookup blws_tya_c2;
-    lookup blws_ssma_alt;
+	#lookup blws_SSMA_alt;
+	lookup blws_C2_lig;
+	lookup blws_TYA_C2;
   script tel2;
-    lookup blws_precomp1;
-    lookup blws_tya_c2;
-    lookup blws_ssma_alt;
+	#lookup blws_SSMA_alt;
+	lookup blws_C2_lig;
+	lookup blws_TYA_C2;
 }blws;
 
 # -------------
 
 feature pres {
   script DFLT;
-  	lookup pres_ai_lengthmark;
-	lookup pres_c2_spacing;
-	lookup pres_all;
+  	lookup pres_TA_C2;
+  	lookup pres_RA_C2;
+  	lookup pres_AI_lengthmark;
+	lookup pres_C2_spacing;
 	lookup pres_AI;
-	lookup pres_ta_c2;
-	lookup pres_taAI_c2;
-	lookup pres_ra_c2;
-	lookup pres_ssa_alt;
+	lookup pres_all;
+	lookup pres_TAI_C2;
+	lookup pres_RAI_C2;
+	lookup pres_SSA_alt;
+	lookup pres_SSMA_alt;
   script telu;
-  	lookup pres_ai_lengthmark;
-	lookup pres_c2_spacing;
-	lookup pres_all;
+  	lookup pres_TA_C2;
+  	lookup pres_RA_C2;
+  	lookup pres_AI_lengthmark;
+	lookup pres_C2_spacing;
 	lookup pres_AI;
-	lookup pres_ta_c2;
-	lookup pres_taAI_c2;
-	lookup pres_ra_c2;
-	lookup pres_ssa_alt;
+	lookup pres_all;
+	lookup pres_TAI_C2;
+	lookup pres_RAI_C2;
+	lookup pres_SSA_alt;
+	lookup pres_SSMA_alt;
   script tel2;
-  	lookup pres_ai_lengthmark;
-	lookup pres_c2_spacing;
-	lookup pres_all;
+  	lookup pres_TA_C2;
+  	lookup pres_RA_C2;
+  	lookup pres_AI_lengthmark;
+	lookup pres_C2_spacing;
 	lookup pres_AI;
-	lookup pres_ta_c2;
-	lookup pres_taAI_c2;
-	lookup pres_ra_c2;
-	lookup pres_ssa_alt;
+	lookup pres_all;
+	lookup pres_TAI_C2;
+	lookup pres_RAI_C2;
+	lookup pres_SSA_alt;
+	lookup pres_SSMA_alt;
 } pres;
 
 # -------------
