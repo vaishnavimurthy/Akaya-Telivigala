@@ -360,52 +360,47 @@ languagesystem tel2 dflt;
 
 #---------------
 
-lookup GSUB_LOOKUP_00012 
+lookup GSUB_LOOKUP_00014 
 {
  lookupflag 0;
-    sub L periodcentered by Ldot;
-    sub l periodcentered by ldot;
-} GSUB_LOOKUP_00012;
+    sub \L \periodcentered by \Ldot;
+    sub \l \periodcentered by \ldot;
+} GSUB_LOOKUP_00014;
 
-#---------------
-
-lookup GSUB_LOOKUP_00013 
+lookup GSUB_LOOKUP_00015 
 {
  lookupflag 0;
-    sub A by ordfeminine;
-    sub O by ordmasculine;
-    sub a by ordfeminine;
-    sub o by ordmasculine;
-} GSUB_LOOKUP_00013;
-
+    sub \A by \ordfeminine;
+    sub \O by \ordmasculine;
+    sub \a by \ordfeminine;
+    sub \o by \ordmasculine;
+} GSUB_LOOKUP_00015;
 
 #---- LOCL ----
 
 lookup GSUB_LOOKUP_00002 
 {
  lookupflag 0;
-    sub Scedilla by Scommaaccent;
-    sub Tcedilla by Tcommaaccent;
-    sub scedilla by scommaaccent;
-    sub tcedilla by tcommaaccent;
+    sub \Scedilla by \Scommaaccent;
+    sub \Tcedilla by \Tcommaaccent;
+    sub \scedilla by \scommaaccent;
+    sub \tcedilla by \tcommaaccent;
 } GSUB_LOOKUP_00002;
-
 
 lookup GSUB_LOOKUP_00003 
 {
  lookupflag 0;
-    sub Scedilla by Scommaaccent;
-    sub Tcedilla by Tcommaaccent;
-    sub scedilla by scommaaccent;
-    sub tcedilla by tcommaaccent;
+    sub \Scedilla by \Scommaaccent;
+    sub \Tcedilla by \Tcommaaccent;
+    sub \scedilla by \scommaaccent;
+    sub \tcedilla by \tcommaaccent;
 } GSUB_LOOKUP_00003;
-
 
 lookup GSUB_LOOKUP_00004 
 {
  lookupflag 0;
-    sub [l ]' lookup GSUB_LOOKUP_00012 [periodcentered ]' [l ] ;
-    sub [L ]' lookup GSUB_LOOKUP_00012 [periodcentered ]' [L ] ;
+    sub [\l ]' lookup GSUB_LOOKUP_00014 [\periodcentered ]' [\l ] ;
+    sub [\L ]' lookup GSUB_LOOKUP_00014 [\periodcentered ]' [\L ] ;
 } GSUB_LOOKUP_00004;
 
 #---- SUPS ----
@@ -413,10 +408,10 @@ lookup GSUB_LOOKUP_00004
 lookup GSUB_LOOKUP_00005 
 {
  lookupflag 0;
-    sub one by onesuperior;
-    sub two by twosuperior;
-    sub three by threesuperior;
-    sub four by foursuperior;
+    sub \one by \onesuperior;
+    sub \two by \twosuperior;
+    sub \three by \threesuperior;
+    sub \four by \foursuperior;
 } GSUB_LOOKUP_00005;
 
 #---- FRAC ----
@@ -424,9 +419,9 @@ lookup GSUB_LOOKUP_00005
 lookup GSUB_LOOKUP_00006 
 {
  lookupflag 0;
-    sub one slash two by onehalf;
-    sub one slash four by onequarter;
-    sub three slash four by threequarters;
+    sub \one \slash \two by \onehalf;
+    sub \one \slash \four by \onequarter;
+    sub \three \slash \four by \threequarters;
 } GSUB_LOOKUP_00006;
 
 
@@ -435,8 +430,8 @@ lookup GSUB_LOOKUP_00006
 lookup GSUB_LOOKUP_00007 
 {
  lookupflag 0;
-    sub [zero one two three four five six seven eight nine ] [A a ]' lookup GSUB_LOOKUP_00013 ;
-    sub [zero one two three four five six seven eight nine ] [O o ]' lookup GSUB_LOOKUP_00013 ;
+    sub [\zero \one \two \three \four \five \six \seven \eight \nine ] [\A \a ]' lookup GSUB_LOOKUP_00015 ;
+    sub [\zero \one \two \three \four \five \six \seven \eight \nine ] [\O \o ]' lookup GSUB_LOOKUP_00015 ;
 } GSUB_LOOKUP_00007;
 
 
@@ -445,16 +440,16 @@ lookup GSUB_LOOKUP_00007
 lookup GSUB_LOOKUP_00008 
 {
  lookupflag 0;
-    sub zero by zero.lf;
-    sub one by one.lf;
-    sub two by two.lf;
-    sub three by three.lf;
-    sub four by four.lf;
-    sub five by five.lf;
-    sub six by six.lf;
-    sub seven by seven.lf;
-    sub eight by eight.lf;
-    sub nine by nine.lf;
+    sub \zero by \zero.lf;
+    sub \one by \one.lf;
+    sub \two by \two.lf;
+    sub \three by \three.lf;
+    sub \four by \four.lf;
+    sub \five by \five.lf;
+    sub \six by \six.lf;
+    sub \seven by \seven.lf;
+    sub \eight by \eight.lf;
+    sub \nine by \nine.lf;
 } GSUB_LOOKUP_00008;
 
 
@@ -463,34 +458,33 @@ lookup GSUB_LOOKUP_00008
 lookup GSUB_LOOKUP_00009 
 {
  lookupflag 0;
-    sub zero.lf by zero;
-    sub one.lf by one;
-    sub two.lf by two;
-    sub three.lf by three;
-    sub four.lf by four;
-    sub five.lf by five;
-    sub six.lf by six;
-    sub seven.lf by seven;
-    sub eight.lf by eight;
-    sub nine.lf by nine;
+    sub \zero.lf by \zero;
+    sub \one.lf by \one;
+    sub \two.lf by \two;
+    sub \three.lf by \three;
+    sub \four.lf by \four;
+    sub \five.lf by \five;
+    sub \six.lf by \six;
+    sub \seven.lf by \seven;
+    sub \eight.lf by \eight;
+    sub \nine.lf by \nine;
 } GSUB_LOOKUP_00009;
-
 
 #---- CASE ----
 
 lookup GSUB_LOOKUP_00010 
 {
  lookupflag 0;
-    sub zero by zero.lf;
-    sub one by one.lf;
-    sub two by two.lf;
-    sub three by three.lf;
-    sub four by four.lf;
-    sub five by five.lf;
-    sub six by six.lf;
-    sub seven by seven.lf;
-    sub eight by eight.lf;
-    sub nine by nine.lf;
+    sub \zero by \zero.lf;
+    sub \one by \one.lf;
+    sub \two by \two.lf;
+    sub \three by \three.lf;
+    sub \four by \four.lf;
+    sub \five by \five.lf;
+    sub \six by \six.lf;
+    sub \seven by \seven.lf;
+    sub \eight by \eight.lf;
+    sub \nine by \nine.lf;
 } GSUB_LOOKUP_00010;
 
 
@@ -499,9 +493,63 @@ lookup GSUB_LOOKUP_00010
 lookup GSUB_LOOKUP_00011 
 {
  lookupflag 0;
-    sub f i by fi;
-    sub f l by fl;
+    sub \f \i by \fi;
+    sub \f \l by \fl;
 } GSUB_LOOKUP_00011;
+
+#---- SALT ----
+
+lookup GSUB_LOOKUP_00012 
+{
+ lookupflag 0;
+    sub \ampersand by \ampersand.ss01;
+} GSUB_LOOKUP_00012;
+
+#---- SS01 ----
+
+#   Feature "ss01": to 'ss20' Stylistic Set 1 to 20 
+#   used in script: DFLT, latn, tel2, telu 
+
+lookup GSUB_LOOKUP_00013 
+{
+ lookupflag 0;
+    sub \ampersand by \ampersand.ss01;
+} GSUB_LOOKUP_00013;
+
+
+feature aalt {
+### import of lookup GSUB_LOOKUP_00000;
+    sub \A by \ordfeminine;
+    sub \O by \ordmasculine;
+    sub \Scedilla by \Scommaaccent;
+    sub \Tcedilla by \Tcommaaccent;
+    sub \a by \ordfeminine;
+    sub \o by \ordmasculine;
+    sub \scedilla by \scommaaccent;
+    sub \tcedilla by \tcommaaccent;
+    sub \zero by \zero.lf;
+    sub \five by \five.lf;
+    sub \six by \six.lf;
+    sub \seven by \seven.lf;
+    sub \eight by \eight.lf;
+    sub \nine by \nine.lf;
+    sub \zero.lf by \zero;
+    sub \five.lf by \five;
+    sub \six.lf by \six;
+    sub \seven.lf by \seven;
+    sub \eight.lf by \eight;
+    sub \nine.lf by \nine;
+    sub \ampersand by \ampersand.ss01;
+### import of lookup GSUB_LOOKUP_00001;
+    sub \one from [\onesuperior \one.lf];
+    sub \two from [\twosuperior \two.lf];
+    sub \three from [\threesuperior \three.lf];
+    sub \four from [\foursuperior \four.lf];
+    sub \one.lf from [\one];
+    sub \two.lf from [\two];
+    sub \three.lf from [\three];
+    sub \four.lf from [\four];
+} aalt;
 
 
 #<<<<<<<<<<<< T E L U G U >>>>>>>>>>>>>>
@@ -1052,6 +1100,7 @@ lookup pres_TAI_C2 {
 sub @NARROW_E @C2_TA' @AIlengthmark' by tlTAIlengthmarkc2.01;
 sub @MEDIUM_E @C2_TA' @AIlengthmark' by tlTAIlengthmarkc2.02;
 sub @WIDE_E @C2_TA' @AIlengthmark' by tlTAIlengthmarkc2.03;
+sub @AIlengthmark @C2_altS_TA' by tlTAc2.following;
 } pres_TAI_C2;
 
 lookup pres_RAI_C2 {
@@ -1132,39 +1181,6 @@ lookup haln {
 
 ### ======================== Features ======================== ###
 
-feature aalt {
-### import of lookup GSUB_LOOKUP_00000;
-    sub A by ordfeminine;
-    sub O by ordmasculine;
-    sub Scedilla by Scommaaccent;
-    sub Tcedilla by Tcommaaccent;
-    sub a by ordfeminine;
-    sub o by ordmasculine;
-    sub scedilla by scommaaccent;
-    sub tcedilla by tcommaaccent;
-    sub zero by zero.lf;
-    sub five by five.lf;
-    sub six by six.lf;
-    sub seven by seven.lf;
-    sub eight by eight.lf;
-    sub nine by nine.lf;
-    sub zero.lf by zero;
-    sub five.lf by five;
-    sub six.lf by six;
-    sub seven.lf by seven;
-    sub eight.lf by eight;
-    sub nine.lf by nine;
-### import of lookup GSUB_LOOKUP_00001;
-    sub one from [onesuperior one.lf];
-    sub two from [twosuperior two.lf];
-    sub three from [threesuperior three.lf];
-    sub four from [foursuperior four.lf];
-    sub one.lf from [one];
-    sub two.lf from [two];
-    sub three.lf from [three];
-    sub four.lf from [four];
-} aalt;
-
 feature case {
         lookup GSUB_LOOKUP_00010;
 } case;
@@ -1189,6 +1205,14 @@ feature ordn {
         lookup GSUB_LOOKUP_00007;
 } ordn;
 
+feature salt {
+        lookup GSUB_LOOKUP_00012;
+} salt;
+
+feature ss01 {
+        lookup GSUB_LOOKUP_00013;
+} ss01;
+
 feature sups {
         lookup GSUB_LOOKUP_00005;
 } sups;
@@ -1202,7 +1226,6 @@ feature locl {
     language ROM  ; 
         lookup GSUB_LOOKUP_00002;
 } locl;
-
 
 #=======================================
 
