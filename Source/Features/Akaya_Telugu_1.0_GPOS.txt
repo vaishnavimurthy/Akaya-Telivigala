@@ -1,4 +1,7 @@
-### ======================== Language Systems ======================== ###
+
+#————————————————————————————————————————————————————————————————————————————————————————
+#   Language Systems 
+#————————————————————————————————————————————————————————————————————————————————————————
 
 languagesystem DFLT dflt;
 languagesystem latn dflt;
@@ -8,16 +11,18 @@ languagesystem latn ROM ;
 languagesystem telu dflt;
 languagesystem tel2 dflt;
 
-### ======================== Lookups ======================== ###
+#————————————————————————————————————————————————————————————————————————————————————————
+#   Lookups
+#————————————————————————————————————————————————————————————————————————————————————————
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "kern": Kerning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_PAIR_ADJUSTMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00000 
 {
  lookupflag 0;
@@ -1755,14 +1760,14 @@ lookup GPOS_LOOKUP_00000
 } GPOS_LOOKUP_00000;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "kern": Kerning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_PAIR_ADJUSTMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00001 
 {
  lookupflag 0;
@@ -1915,14 +1920,14 @@ lookup GPOS_LOOKUP_00001
 } GPOS_LOOKUP_00001;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "kern": Kerning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_PAIR_ADJUSTMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00002 
 {
  lookupflag 0;
@@ -1944,14 +1949,14 @@ lookup GPOS_LOOKUP_00002
 } GPOS_LOOKUP_00002;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "dist": Distances 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_PAIR_ADJUSTMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00003 
 {
  lookupflag 8;
@@ -3868,14 +3873,14 @@ lookup GPOS_LOOKUP_00003
 } GPOS_LOOKUP_00003;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "mark": Mark Positioning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_MARK_TO_BASE_ATTACHMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00004 
 {
  lookupflag 0;
@@ -4310,14 +4315,14 @@ lookup GPOS_LOOKUP_00004
 } GPOS_LOOKUP_00004;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "blwm": Below-base Mark Positioning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_MARK_TO_BASE_ATTACHMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00005 
 {
  lookupflag 0;
@@ -5290,14 +5295,14 @@ lookup GPOS_LOOKUP_00005
 } GPOS_LOOKUP_00005;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "blwm": Below-base Mark Positioning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_MARK_TO_MARK_ATTACHMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00006 
 {
  lookupflag 0;
@@ -5558,14 +5563,14 @@ lookup GPOS_LOOKUP_00006
 } GPOS_LOOKUP_00006;
 
 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 #   Feature "mkmk": Mark to Mark Positioning 
 #   used in script: DFLT 
 #   used in script: latn 
 #   used in script: tel2 
 #   used in script: telu 
 #   from a lookup of type GPOS_LOOKUP_TYPE_MARK_TO_MARK_ATTACHMENT 
-#*************************************************************************
+#————————————————————————————————————————————————————————————————
 lookup GPOS_LOOKUP_00007 
 {
  lookupflag 256;
@@ -5627,8 +5632,10 @@ lookup GPOS_LOOKUP_00007
         <anchor -210 -272> mark @MARKS_CLASS_0_LUT7_SUB0 ;
 } GPOS_LOOKUP_00007;
 
+#——————————————————————————————————————————————————————————————————————————————————————
+#   Features
+#——————————————————————————————————————————————————————————————————————————————————————
 
-#***** Done. ******
 feature blwm {
         lookup GPOS_LOOKUP_00005;
         lookup GPOS_LOOKUP_00006;
@@ -5652,13 +5659,12 @@ feature mkmk {
         lookup GPOS_LOOKUP_00007;
 } mkmk;
 
-#----------------------------------------------
+#——————————————————————————————————————————————————————————————————————————————————————
+#   GDEF TABLE ========================================================================
+#——————————————————————————————————————————————————————————————————————————————————————
 
-#
-# Export of the GDEF table
-#
-
-@SIMPLE = [\tlA \tlAA \tlI \tlII 
+@SIMPLE = [
+        \tlA \tlAA \tlI \tlII 
         \tlU \tlUU \tlvR \tlvRR \tlvL 
         \tlE \tlEE \tlAI \tlO \tlOO 
         \tlAU \tlKA \tlKHA \tlGA \tlGHA 
@@ -5721,8 +5727,11 @@ feature mkmk {
         \lozenge \bar \brokenbar \at \ampersand 
         \paragraph \copyright \registered \section \trademark 
         \degree \estimated \literSign \asciicircum \dagger 
-        \daggerdbl \ampersand.ss01 ];
-@LIGATURES = [\tlK \tlKH \tlG \tlGH 
+        \daggerdbl \ampersand.ss01
+        ];
+        
+@LIGATURES = [
+        \tlK \tlKH \tlG \tlGH 
         \tlNG \tlC \tlCH \tlJ \tlJH 
         \tlNY \tlTT \tlTTH \tlDD \tlDDH 
         \tlNN \tnNN.alt \tlT \tlTH \tlD 
@@ -5806,8 +5815,11 @@ feature mkmk {
         \tlDHAU \tlNAU \tlPAU \tlPHAU \tlBAU 
         \tlBHAU \tlMAU \tlYAU \tlRAU \tlLAU 
         \tlVAU \tlSHAU \tlSSAU \tlSAU \tlHAU 
-        \tlLLAU \fi \fl ];
-@MARKS = [\tlmU \tlmUU \tlmvR \tlmvRR 
+        \tlLLAU \fi \fl
+        ];
+        
+@MARKS = [
+        \tlmU \tlmUU \tlmvR \tlmvRR 
         \tlmvL \tlAIlengthmark \tlAIlengthmark.01 \tlAIlengthmark.03 \tlAnusvara 
         \tlArasunna \tlVisarga \tlKHAc2 \tlGAc2 \tlGHAc2 
         \tlNGAc2 \tlJAc2 \tlJHAc2 \tlNYAc2 \tlTTAc2 
@@ -5821,16 +5833,16 @@ feature mkmk {
          \tlKAc2.following \tlKHAc2.following \tlGAc2.following \tlGHAc2.following \tlNGAc2.following \tlCAc2.following \tlCHAc2.following \tlJAc2.following \tlJHAc2.following \tlNYAc2.following \tlTTAc2.following \tlTTHAc2.following \tlDDAc2.following \tlDDHAc2.following \tlNNAc2.following \tlTHAc2.following \tlDAc2.following \tlDHAc2.following \tlNAc2.following \tlPAc2.following \tlPHAc2.following \tlBAc2.following \tlBHAc2.following \tlMAc2.following \tlYAc2.following \tlRAc2.following \tlLAc2.following \tlVAc2.following \tlSHAc2.following \tlSSAc2.following \tlSAc2.following \tlHAc2.following \tlLLAc2.following \tlKSSAc2.following
          ];
 
-
 table GDEF {
 
     GlyphClassDef @SIMPLE, @LIGATURES, @MARKS, ;
 
 } GDEF;
 
-#
-# Export of the name table
-#
+#——————————————————————————————————————————————————————————————————————————————————————
+#   NAME TABLE ========================================================================
+#——————————————————————————————————————————————————————————————————————————————————————
+
 table name {
   nameid 0 1 0 0 "Copyright \a9 2015 by Vaishnavi Murthy. All rights reserved.";
   nameid 1 1 0 0 "Akaya_Telugu_1.0";
@@ -5839,7 +5851,7 @@ table name {
   nameid 4 1 0 0 "Akaya_Telugu_1.0";
   nameid 5 1 0 0 "Version 2.000";
   nameid 6 1 0 0 "Akaya_Telugu_1.0-Regular";
-  nameid 9 1 0 0 "Vaishnavi Murthy Yerkadithaya, Juan Luis Blanco Astrodo";
+  nameid 9 1 0 0 "Vaishnavi Murthy Yerkadithaya, Juan Luis Blanco Aristondo";
   nameid 13 1 0 0 "http://scripts.sil.org/OFL";
   nameid 0 3 1 1033 "Copyright \00a9 2015 by Vaishnavi Murthy. All rights reserved.";
   nameid 1 3 1 1033 "Akaya_Telugu_1.0";
@@ -5848,6 +5860,6 @@ table name {
   nameid 4 3 1 1033 "Akaya_Telugu_1.0-Regular";
   nameid 5 3 1 1033 "Version 2.000";
   nameid 6 3 1 1033 "Akaya_Telugu_1.0-Regular";
-  nameid 9 3 1 1033 "Vaishnavi Murthy Yerkadithaya, Juan Luis Blanco Astrodo";
+  nameid 9 3 1 1033 "Vaishnavi Murthy Yerkadithaya, Juan Luis Blanco Aristondo";
   nameid 13 3 1 1033 "http://scripts.sil.org/OFL";
 } name;
