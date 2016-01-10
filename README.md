@@ -29,5 +29,5 @@ Juan for Latin juan@blancoletters.com
 
 Google fonts & Dave Crossland for commissioning this font.
 Pria Ravichandran and Liang Hai for all the help with the feature files.
-Moody Chetananand and Ambarisha Darbha for all the Telugu script feedback.
+Moody Chetananand and Ambarisha Darbha for going over and giving feeback on this style of witing Telugu.
 Georg Seifert, Rainer Erich Scheichelbauer & Dunwich Type Founders for demistify the Glyphs.app.
