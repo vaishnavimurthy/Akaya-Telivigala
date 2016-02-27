@@ -1,12 +1,12 @@
-# Akaya-Tenetetta
+# Akaya-Telivigala
 Designers: Vaishnavi Murthy & [Juan Luis Blanco](http://www.blancoletters.com)
 
-Akaya is a single weight experimental display typeface in Kannada, Telugu and Latin scripts. Akaya Tenetetta and   
-[Akaya Kanadaka](https://github.com/vaishnavimurthy/Akaya-Kannada) are made as two separate font files which share a common Latin.  
+Akaya is a single weight experimental display typeface in Kannada, Telugu and Latin scripts. Akaya Telivigala and   
+[Akaya Kanadaka](https://github.com/vaishnavimurthy/Akaya-Kanadaka) are made as two separate font files which share a common Latin.  
 
 **Language Support**
 
-Akaya Tenetetta supports the reformed Telugu character set. The language support therefore extends to contemporary Telugu and basic Sanskrit.
+Akaya Telivigala supports the reformed Telugu character set. The language support therefore extends to contemporary Telugu and basic Sanskrit.
 
 Akaya's Latin supports Afrikaans, Basque, Breton, Catalan, Croatian (Latin), Czech, Danish, Dutch, English, Estonian, Faroese, Finnish, French, Gaelic, Gagauz (Latin), German, Hungarian, Icelandic, Indonesian, Irish, Italian, Javanese (Latin), Kashubian, Kannada, Latvian, Lithuanian, Malay (Latin), Moldovan (Latin), Norwegian, Polish, Portuguese, Romanian (Latin), Sami (Northern, Inari & Lule), Serbian (Latin), Silesian, Sorbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Telugu, Turkish and Walloon.
 
