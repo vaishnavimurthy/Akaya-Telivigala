@@ -1,6 +1,8 @@
 # Akaya-Telivigala
 Designers: Vaishnavi Murthy & [Juan Luis Blanco](http://www.blancoletters.com)
 
+![alt tag](https://github.com/vaishnavimurthy/Akaya-Telivigala/blob/master/Tests/%2B/Img_1.png)
+
 Akaya is a single weight experimental display typeface in Kannada, Telugu and Latin scripts. Akaya Telivigala and   
 [Akaya Kanadaka](https://github.com/vaishnavimurthy/Akaya-Kanadaka) are made as two separate font files which share a common Latin.  
 
