@@ -762,7 +762,7 @@ value = "http://scripts.sil.org/OFL";
 }
 );
 date = "2020-12-17 11:00:11 +0000";
-designer = "Vaishnavi Murthy Yerkadithaya ( vaishnavimurthy@gmail.com ), Juan Luis Blanco Aristondo ( juan@blancoletters.com )";
+designer = "Vaishnavi Murthy Yerkadithaya, Juan Luis Blanco Aristondo";
 disablesNiceNames = 1;
 familyName = "Akaya Telivigala";
 featurePrefixes = (
