@@ -834,16 +834,36 @@ ascender = 958;
 capHeight = 613;
 customParameters = (
 {
+name = hheaAscender;
+value = 920;
+},
+{
+name = hheaDescender;
+value = -276;
+},
+{
+name = hheaLineGap;
+value = 0;
+},
+{
 name = typoAscender;
-value = 958;
+value = 920;
 },
 {
 name = typoDescender;
-value = -834;
+value = -276;
 },
 {
 name = typoLineGap;
 value = 0;
+},
+{
+name = winAscent;
+value = 1011;
+},
+{
+name = winDescent;
+value = 834;
 }
 );
 descender = -837;
