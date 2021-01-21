@@ -865,6 +865,10 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 {
 name = licenseURL;
 value = "http://scripts.sil.org/OFL";
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2020-12-17 11:00:11 +0000";
