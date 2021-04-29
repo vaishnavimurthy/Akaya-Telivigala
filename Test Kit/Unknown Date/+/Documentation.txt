@@ -1,0 +1,125 @@
+(1) Requirements ---------------------------------------------------------------
+
+Akaya is a calligraphic display typeface for contemporary use. This follows the new 
+orthography as commonly seen used today in non-academic settings. Akaya will however 
+support basic Sanskrit for both Kannada and Telugu scripts. The typeface is based on
+a hybrid model that tries to closely imitate the old way of writing--unaffected by 
+the constraints of hot-metal and photo-typesetting era. This would mostly mean 
+complex vattu placements which will be pretty complex for Telugu. The line spacing for
+Akaya will therefore be affected by this decision. This typeface is an experiment at 
+this stage to provide a good quality informal Kannada and Telugu display typeface.
+
+
+(1.a) GPOS
+      (1.a.1) Positioning of Below Base / Post Base forms without overlap (Mark to Mark positioning)
+      (1.a.2) 3 level Vattu Forms 
+      Generated Classes
+
+
+(1.b) GSUB       
+_________________
+CV Ligatures :
+ఢ ఢా ఢి ఢీ ఢు ఢూ ఢృ ఢౄ ఢౢ ఢె ఢే ఢై ఢొ ఢో ఢౌ ఢం ఢః
+
+_________________
+Kerning Check :
+ఖ్గోగో ఖోగో 
+
+_________________
+Halanth :
+క్ క్క్
+
+_________________
+Anchors : 
+క్గ క్గా | య్గ య్గా | ఖ్గ ఖ్గా
+
+_________________
+AI length mark : 
+క్కై క్గ్కై క్గై 	@NARROW_LETTERS + tlAIlengthmark.01
+ద్గై 	@MEDIUM_LETTERS  + tlTAIlengthmark
+య్గై	@WIDE_LETTERS  + tlTAIlengthmark.03
+క్ష్ఠై	@C2_LIGATURE + tlRAIlengthmarkc2.01
+
+@C2_LIGATURE_AI_TA = 
+ క్తై	@NARROW_LETTERS + tlTAIlengthmarkc2.01
+  క్తై 	@MEDIUM_LETTERS  + tlTAIlengthmarkc2.02
+ క్తై	@WIDE_LETTERS  + tlTAIlengthmarkc2.03
+
+
+@C2_AI_LIGATURE_AI_RA = 
+  క్రై 	@NARROW_LETTERS  + tlRAIlengthmarkc2.01
+  క్రై 	@MEDIUM_LETTERS  + tlRAIlengthmarkc2.02
+ క్రై	@WIDE_LETTERS  + tlRAIlengthmarkc2.03 
+
+_________________
+Following marks : 
+క్గ్గ క్ఝ్య య్గ్క య్గ్గ ర్ఫ్యూ c2 + c2.following
+క్గ్త్క	Place second tlTAc2 as second level vottu
+క్గ్గ్త	... + tlTAc2.following
+క్ప్ర య్క్ష్ర  క్ఙ్గ్ర	... + tlRAc2.following
+క్క్త్ర క్గ్త్ర	sub @C2 tlTAc2' tlRAc2' by tlTRAc2.following
+
+_________________
+
+Replace @KA + tlSSAc2 with tlSSAc2.kssa  :
+క్ష క్షి క్షీ క్షు క్షో | య్ష
+
+_________________
+@C2_LIGATURE  :
+క్ఙ్గ క్ఙ్గ్మ య్ఙ్గ	sub tlNGAc2 tlGAc2 by tlNGGAc2
+క్జ్ఞ య్జ్ఞ	sub tlJAc2 tlNYAc2 by tlJNYAc2
+క్ట్ర క్ట్రై య్ట్ర	sub tlTTAc2 tlRAc2 by tlTTRAc2
+క్ట్ల య్ట్ల 	sub tlTTAc2 tlLAc2 by tlTTLAc2
+క్త్ర య్త్ర	sub tlTAc2 tlRAc2 by tlTRAc2
+క్క్ష క్క్షి క్క్షే య్క్ష్ర	sub tlKAc2 tlSSAc2 by tlKSSAc2
+య్ష్మ	sub tlSSAc2 tlMAc2 by tlSSMAc2
+క్ష్మ tlSSMAc2.01 ( క) {appears after '@KA tlSSA' tlMAc2' by tlSSMAc2.01', Eg., Lakshmi}
+క్ష్ణ య్ష్ణ	sub tlSSAc2 tlNNAc2 by tlSSNNAc2
+క్ష్ఠ య్ష్ఠ	sub tlSSAc2 tlTTHAc2 by tlSSTTHAc2
+క్త్య క్త్య  |   య్త్య	sub @NARROW_LETTERS tlTAc2' tlYAc2' by tlTYAc2
+
+      
+
+
+(2) Specification -----------------------------------
+
+Definition:
+===========
+
+tlSSMAC2.1  {appears after KA+Virama Eg., Lakshmi}
+tlSSMAC2    {appears after all other BaseConsonants+Virama}
+ౄ, ఀ,           {No support for vocalic RR vowel mark, Chandra Mark, Vocalic LL for Kannada and Telugu}
+tlLLLA ,tlRRA ( Only tlLLLA and tlLLL are supported. Similarly tlRRA and tlRR as they are archaic characters) 
+
+Alternates:
+===========
+
+Stylistic Set 2:
+----------------
+tlKU.alt
+tlKUU.alt
+tlNGU.alt
+tlNGUU.alt
+tnNN.alt
+
+
+(3) Design Documents ------------------------------------------------------------
+
+
+
+
+
+(4) Feature Files ----------------------------------------------------------------------
+ 
+Tables
+Sorting Order
+Groups/Classes
+--GSUB
+Features
+Lookups
+--GPOS
+Positioning
+Kerning Tables
+
+
+
